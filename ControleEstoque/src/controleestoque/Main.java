@@ -2,10 +2,9 @@
 package controleestoque;
 
 // Para a GUI(JavaFX)
+import TabelasBD.Ingrediente;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
@@ -40,9 +39,9 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
     public void start(Stage primaryStage) throws Exception {
 
         Ingrediente ovo = new Ingrediente();
-        ovo.setCod("123");
+        ovo.setCod(123);
         ovo.setNome("ovo");
-        ovo.setQuantAtual("100");
+        ovo.setQtdeAtual(100);
 
         ObservableList<String> options =
                 FXCollections.observableArrayList(
