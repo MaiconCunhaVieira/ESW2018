@@ -1,4 +1,5 @@
 package controleestoque;
+
 public class Fornecedor {
     private String CNPJ, name, adr, phone;
 
