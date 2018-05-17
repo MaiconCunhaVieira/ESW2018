@@ -3,6 +3,7 @@ package controleestoque;
 
 // Para a GUI(JavaFX)
 import Scenes.CadastraCompraIngrediente;
+import Scenes.CadastraProducao;
 import TabelasBD.Ingrediente;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -20,7 +21,7 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
     // lambda expressions = método de fazer as actions do botão de maneiras simples e eficaz.
     public static Stage window;
     //Scene scene_cad_fornec;
-    Button button_cad_compra_ingred, button_ok;
+    Button button_cad_compra_ingred, button_cad_producao;//, button_ok;
 
     public static void main(String[] args) {
 
@@ -53,7 +54,7 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
         window = primaryStage;
         window.setTitle("Controle de Estoque");
         button_cad_compra_ingred = new Button();
-        button_cad_compra_ingred.setText("Cadastrar nova compra de ingrediente.");
+        button_cad_compra_ingred.setText("Cadastrar nova compra de ingrediente");
         button_cad_compra_ingred.setOnAction(e -> {
 
             System.out.println("Lambda expression button");
@@ -63,8 +64,20 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
 
         });
 
+        button_cad_producao = new Button();
+        button_cad_producao.setText("Cadastrar nova produção");
+        button_cad_producao.setOnAction(e -> {
+
+            System.out.println("Lambda expression button");
+            System.out.println("Equivale ao void handle...");
+            //window.setScene(scene_cad_fornec);
+            CadastraProducao.ChangeScene();
+
+        });
+
         GridPane layout = new GridPane();
         layout.add(button_cad_compra_ingred, 0, 0);
+        layout.add(button_cad_producao, 0, 1);
         layout.setMinSize(400, 200);
         layout.setPadding(new Insets(10, 10, 10, 10));
         comboBox.getItems().addAll("Option 4", "Option 5", "Option 6");

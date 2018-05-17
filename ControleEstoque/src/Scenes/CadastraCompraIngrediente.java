@@ -11,11 +11,11 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
-public class CadastraCompraIngrediente {//extends Application {
+public class CadastraCompraIngrediente extends Cadastro{//extends Application {
 
-    static Scene scene;
-    static Button button_ok;
-    static GridPane layout;
+//    static Scene scene;
+//    static Button button_ok;
+//    static GridPane layout;
 
 //    public static void main(String[] args){
 //        launch(args);
@@ -60,22 +60,22 @@ public class CadastraCompraIngrediente {//extends Application {
         Main.window.setScene(scene);
     }
 
-    private static Button CriaButton(String text, int columnIndex, int rowIndex){
-        Button button = new Button();
-        button.setText(text);
-        layout.add(button, columnIndex, rowIndex);
-        return button;
-    }
-
-    private static void CriaLabel(String text, int columnIndex, int rowIndex) {
-        Label label = new Label(text);
-        label.setTextAlignment(TextAlignment.JUSTIFY);
-        layout.add(label, columnIndex, rowIndex);
-    }
-
-    private static void CriaTextField(String text, int columnIndex, int rowIndex){
-        TextField textField = new TextField();
-        textField.setPromptText(text);
-        layout.add(textField,columnIndex, rowIndex);
-    }
+//    private static Button CriaButton(String text, int columnIndex, int rowIndex){
+//        Button button = new Button();
+//        button.setText(text);
+//        layout.add(button, columnIndex, rowIndex);
+//        return button;
+//    }
+//
+//    private static void CriaLabel(String text, int columnIndex, int rowIndex) {
+//        Label label = new Label(text);
+//        label.setTextAlignment(TextAlignment.JUSTIFY);
+//        layout.add(label, columnIndex, rowIndex);
+//    }
+//
+//    private static void CriaTextField(String text, int columnIndex, int rowIndex){
+//        TextField textField = new TextField();
+//        textField.setPromptText(text);
+//        layout.add(textField,columnIndex, rowIndex);
+//    }
 }
