@@ -52,7 +52,7 @@ public class CompraIngrediente {
         return preco;
     }
 
-    public void CompraIngrediente(String CNPJFornec, int codIngred, LocalDate data, LocalTime hora, int qtdeIngred, float preco){
+    public CompraIngrediente(String CNPJFornec, int codIngred, LocalDate data, LocalTime hora, int qtdeIngred, float preco){
         this.CNPJFornec = CNPJFornec;
         this.codIngred = codIngred;
         this.data = data;
