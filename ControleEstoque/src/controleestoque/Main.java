@@ -38,12 +38,11 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
         window = primaryStage;
         window.setTitle("Controle de Estoque");
         layout = new GridPane();
+        layout.setMinSize(400, 200);
+        //layout.setPadding(new Insets(10, 10, 10, 10));
+        //layout.getChildren().add(button_fornec);
 
         InitializeMenuBar();
-
-        layout.setMinSize(400, 200);
-        layout.setPadding(new Insets(10, 10, 10, 10));
-        //layout.getChildren().add(button_fornec);
 
         Scene scene = new Scene(layout, 300, 250);
         window.setScene(scene);
