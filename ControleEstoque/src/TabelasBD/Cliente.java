@@ -1,6 +1,6 @@
 package TabelasBD;
 
-public class Fornecedor {
+public class Cliente {
 
     private String CNPJ;
     private String nome;
@@ -35,7 +35,7 @@ public class Fornecedor {
         return telefone;
     }
 
-    public void Fornecedor(String CNPJ, String nome, String endereco, String telefone){
+    public void Cliente(String CNPJ, String nome, String endereco, String telefone){
         this.CNPJ = CNPJ;
         this.nome = nome;
         this.endereco = endereco;

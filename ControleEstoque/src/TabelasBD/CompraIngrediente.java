@@ -1,14 +1,14 @@
 package TabelasBD;
 
-import java.sql.Date;
-import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class CompraIngrediente {
 
     private String CNPJFornec;
     private int codIngred;
-    private Date data;
-    private Time hora;
+    private LocalDate data;
+    private LocalTime hora;
     private int qtdeIngred;
     private float preco;
 
@@ -19,10 +19,10 @@ public class CompraIngrediente {
     public void setCodIngred(int codIngred){
         this.codIngred = codIngred;
     }
-    public void setData(Date data){
+    public void setData(LocalDate data){
         this.data = data;
     }
-    public void setHora(Time hora){
+    public void setHora(LocalTime hora){
         this.hora = hora;
     }
     public void setQtdeIngred(int qtdeIngred){
@@ -39,10 +39,10 @@ public class CompraIngrediente {
     public int getCodIngred(){
         return codIngred;
     }
-    public Date getData(){
+    public LocalDate getData(){
         return data;
     }
-    public Time getHora(){
+    public LocalTime getHora(){
         return hora;
     }
     public int getQtdeIngred(){
@@ -50,5 +50,14 @@ public class CompraIngrediente {
     }
     public float getPreco(){
         return preco;
+    }
+
+    public void CompraIngrediente(String CNPJFornec, int codIngred, LocalDate data, LocalTime hora, int qtdeIngred, float preco){
+        this.CNPJFornec = CNPJFornec;
+        this.codIngred = codIngred;
+        this.data = data;
+        this.hora = hora;
+        this.qtdeIngred = qtdeIngred;
+        this.preco = preco;
     }
 }

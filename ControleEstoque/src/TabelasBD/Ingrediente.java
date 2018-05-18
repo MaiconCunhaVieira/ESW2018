@@ -17,7 +17,7 @@ public class Ingrediente {
         this.qtdeAtual = qtdeAtual;
     }
 
-    //getters
+    // getters
     public int getCod(){
         return cod;
     }
@@ -26,5 +26,11 @@ public class Ingrediente {
     }
     public int getQtdeAtual(){
         return qtdeAtual;
+    }
+
+    public Ingrediente(int cod, String nome, int qtdeAtual){
+        this.cod = cod;
+        this.nome = nome;
+        this.qtdeAtual = qtdeAtual;
     }
 }
