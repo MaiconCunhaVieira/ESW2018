@@ -12,13 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controleestoque/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+            <state relative-caret-position="175">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#InitializeMenuBar#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -27,8 +28,8 @@
       <file leaf-file-name="CadastraCompraIngrediente.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scenes/CadastraCompraIngrediente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="46" selection-end-column="57" />
+            <state relative-caret-position="207">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,25 +40,24 @@
       <file leaf-file-name="Cadastro.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scenes/Cadastro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#CriaButton#0;class#Cadastro#0" />
                 <element signature="method#CriaLabel#0;class#Cadastro#0" />
                 <element signature="method#CriaTextField#0;class#Cadastro#0" />
-                <element signature="method#CriaNumericTextField#0;class#Cadastro#0" />
                 <element signature="method#CriaComboBox#0;class#Cadastro#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CadastraProducao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CadastraProducao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scenes/CadastraProducao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="510">
+              <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,9 +82,9 @@
         <option value="$PROJECT_DIR$/src/TabelasBD/Fornecedor.java" />
         <option value="$PROJECT_DIR$/src/TabelasBD/CompraIngrediente.java" />
         <option value="$PROJECT_DIR$/src/Scenes/Scene.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Cadastro.java" />
         <option value="$PROJECT_DIR$/src/Scenes/CadastraCompraIngrediente.java" />
         <option value="$PROJECT_DIR$/src/Scenes/CadastraProducao.java" />
+        <option value="$PROJECT_DIR$/src/Scenes/Cadastro.java" />
         <option value="$PROJECT_DIR$/src/controleestoque/Main.java" />
       </list>
     </option>
@@ -98,7 +98,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -239,12 +240,12 @@
       <workItem from="1526585254341" duration="602000" />
       <workItem from="1526587304461" duration="8471000" />
       <workItem from="1526605263711" duration="1100000" />
-      <workItem from="1526667616837" duration="2169000" />
+      <workItem from="1526667616837" duration="3876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14700000" />
+    <option name="totallyTimeSpent" value="16407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -252,6 +253,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -263,7 +265,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26377118" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3209746" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -273,7 +275,6 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -284,10 +285,10 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894068" weight="0.2757475" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49894068" visible="true" weight="0.2757475" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26377118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3209746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -323,6 +324,7 @@
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#InitializeMenuBar#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -363,7 +365,6 @@
             <element signature="method#CriaButton#0;class#Cadastro#0" />
             <element signature="method#CriaLabel#0;class#Cadastro#0" />
             <element signature="method#CriaTextField#0;class#Cadastro#0" />
-            <element signature="method#CriaNumericTextField#0;class#Cadastro#0" />
             <element signature="method#CriaComboBox#0;class#Cadastro#0" />
           </folding>
         </state>
@@ -426,7 +427,6 @@
             <element signature="method#CriaButton#0;class#Cadastro#0" />
             <element signature="method#CriaLabel#0;class#Cadastro#0" />
             <element signature="method#CriaTextField#0;class#Cadastro#0" />
-            <element signature="method#CriaNumericTextField#0;class#Cadastro#0" />
             <element signature="method#CriaComboBox#0;class#Cadastro#0" />
           </folding>
         </state>
@@ -516,47 +516,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/Cadastro.java">
+    <entry file="file://$PROJECT_DIR$/src/Scenes/CadastraProducao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        <state relative-caret-position="510">
+          <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#CriaButton#0;class#Cadastro#0" />
-            <element signature="method#CriaLabel#0;class#Cadastro#0" />
-            <element signature="method#CriaTextField#0;class#Cadastro#0" />
-            <element signature="method#CriaNumericTextField#0;class#Cadastro#0" />
-            <element signature="method#CriaComboBox#0;class#Cadastro#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scenes/CadastraCompraIngrediente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="46" selection-end-column="57" />
+        <state relative-caret-position="207">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scenes/Cadastro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CriaButton#0;class#Cadastro#0" />
+            <element signature="method#CriaLabel#0;class#Cadastro#0" />
+            <element signature="method#CriaTextField#0;class#Cadastro#0" />
+            <element signature="method#CriaComboBox#0;class#Cadastro#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controleestoque/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+        <state relative-caret-position="175">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/CadastraProducao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#InitializeMenuBar#0;class#Main#0" />
           </folding>
         </state>
       </provider>
