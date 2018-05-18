@@ -1,19 +1,22 @@
 package Scenes;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.TextAlignment;
 
-public abstract class Cadastro {
+import java.util.List;
+
+public abstract class Cadastro implements Scenes.Scene {
 
     protected static Scene scene;
     protected static Button button_ok;
     protected static GridPane layout;
-
-    //protected abstract void ChangeScene();
 
     protected static Button CriaButton(String text, int columnIndex, int rowIndex){
         Button button = new Button();
@@ -28,9 +31,35 @@ public abstract class Cadastro {
         layout.add(label, columnIndex, rowIndex);
     }
 
-    protected static void CriaTextField(String text, int columnIndex, int rowIndex){
+    protected static TextField CriaTextField(String text, int columnIndex, int rowIndex){
         TextField textField = new TextField();
         textField.setPromptText(text);
         layout.add(textField,columnIndex, rowIndex);
+        return textField;
+    }
+
+    protected static TextField CriaNumericTextField(String text, int columnIndex, int rowIndex){
+        TextField textField = new TextField();
+        textField.setPromptText(text);
+        textField.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue,
+                                String newValue) {
+                if (!newValue.matches("\\d*")) {
+                    textField.setText(newValue.replaceAll("[^\\d]", ""));
+                }
+            }
+        });
+        layout.add(textField,columnIndex, rowIndex);
+        return textField;
+    }
+
+    protected static ComboBox<String> CriaComboBox(List<String> options, int columnIndex, int rowIndex){
+        ComboBox<String> comboBox = new ComboBox();
+        for (String op : options) {
+            comboBox.getItems().add(op);
+        }
+        layout.add(comboBox, columnIndex, rowIndex);
+        return comboBox;
     }
 }

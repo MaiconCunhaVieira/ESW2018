@@ -4,15 +4,23 @@ import controleestoque.Main;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
-public class CadastraProducao extends Cadastro{
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-//    static Scene scene;
-//    static Button button_ok;
-//    static GridPane layout;
+public class CadastraProducao extends Cadastro {
 
-    public static void ChangeScene(){
+    private ComboBox<String> comboBoxProdutoFinal;
+    private DatePicker datePickerData;
+    private TextField textFieldHora;
+    private TextField textFieldQtdeProd;
+
+    public void ChangeScene(){
 
         // Layout cad_fornec
         layout = new GridPane();
@@ -24,24 +32,37 @@ public class CadastraProducao extends Cadastro{
 
         // Labels added to scene
         CriaLabel("Informações:", 0, 0);
-        CriaLabel("Nome do Produto:(será combobox)", 0, 1);
-        CriaLabel("Data:(opção para 'hoje')", 0, 2);
-        CriaLabel("Hora:(opção para 'agora')", 0, 3);
-        CriaLabel("Quantidade a ser produzida:(será campo numerico)", 0, 4);
+        CriaLabel("Nome do Produto:", 0, 1);
+        CriaLabel("Data:", 0, 2);
+        CriaLabel("Hora:", 0, 3);
+        CriaLabel("Quantidade:", 0, 4);
 
         // TextFields added to scene
-        CriaTextField("Produto", 1, 1);
-        CriaTextField("Data", 1, 2);
-        CriaTextField("Hora", 1, 3);
-        CriaTextField("Quantidade", 1, 4);
+        //CriaTextField("Produto", 1, 1);
+        //CriaTextField("Data", 1, 2);
+        textFieldHora = CriaTextField("Hora", 1, 3);
+        textFieldQtdeProd = CriaTextField("Quantidade", 1, 4);
+
+        // ComboBoxes addded to scene
+        List<String> prodsNome = new ArrayList<>(); // quando BD for integrado, será lido do método SelectProdutosFinaisNome() da classe GerenciaProdutosFinais
+        prodsNome.add("Fornec 1");
+        prodsNome.add("Fornec 2");
+        comboBoxProdutoFinal = CriaComboBox(prodsNome, 1, 1);
+
+        // DatePicker added to scene
+        datePickerData = new DatePicker();
+        datePickerData.setOnAction(event -> {
+            LocalDate data = datePickerData.getValue();
+        });
+        layout.add(datePickerData, 1, 2);
 
         layout.setAlignment(Pos.CENTER);
-        //layout.add(button_ok, 0,5);
 
         // Scene initialized
         scene = new Scene(layout, 300, 250);
         button_ok.setOnAction(e -> {
-
+            // select produto final que tenha mesmo nome que o produto selecionado na comboBox
+            // insert nova produção com esse produto
         });
 
         // change window from Main to this scene

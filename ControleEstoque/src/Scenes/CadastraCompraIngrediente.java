@@ -5,28 +5,21 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.text.TextAlignment;
-import javafx.stage.Stage;
 
-public class CadastraCompraIngrediente extends Cadastro{//extends Application {
+import java.util.ArrayList;
+import java.util.List;
 
-//    static Scene scene;
-//    static Button button_ok;
-//    static GridPane layout;
+public class CadastraCompraIngrediente extends Cadastro {
 
-//    public static void main(String[] args){
-//        launch(args);
-//    }
+    private ComboBox<String> comboBoxFornec;
+    private ComboBox<String> comboBoxIngred;
+    private TextField TextFieldQtdeIngred;
 
-//    @Override
-//    public void start(Stage primaryStage) throws Exception {
-//        ChangeScene();
-//    }
-
-    public static void ChangeScene(){
+    public void ChangeScene(){
 
         // Layout cad_fornec
         layout = new GridPane();
@@ -38,44 +31,36 @@ public class CadastraCompraIngrediente extends Cadastro{//extends Application {
 
         // Labels added to scene
         CriaLabel("Informações:", 0, 0);
-        CriaLabel("Fornecedor:(será combobox)", 0, 1);
-        CriaLabel("Ingrediente:(será combobox)", 0, 2);
-        CriaLabel("Quantidade a ser comprada:(será campo numerico)", 0, 3);
+        CriaLabel("Fornecedor:", 0, 1);
+        CriaLabel("Ingrediente:", 0, 2);
+        CriaLabel("Quantidade:", 0, 3);
 
         // TextFields added to scene
-        CriaTextField("Fornecedor", 1, 1);
-        CriaTextField("Ingrediente", 1, 2);
-        CriaTextField("Quantidade", 1, 3);
+        //CriaTextField("Fornecedor", 1, 1);
+        //CriaTextField("Ingrediente", 1, 2);
+        TextFieldQtdeIngred = CriaNumericTextField("Quantidade", 1, 3);
 
+        // ComboBoxes added to scene
+        List<String> fornecsNome = new ArrayList<>(); // quando BD for integrado, será lido do método SelectFornecedoresNome() da classe GerenciaFornecedores
+        fornecsNome.add("Fornec 1");
+        fornecsNome.add("Fornec 2");
+        comboBoxFornec = CriaComboBox(fornecsNome, 1, 1);
+
+        List<String> ingredsNome = new ArrayList<>(); // quando BD for integrado, será lido do método SelectIngredientesNome() da classe GerenciaIngredientes
+        ingredsNome.add("Prod 1");
+        ingredsNome.add("Prod 2");
+        comboBoxIngred = CriaComboBox(ingredsNome, 1, 2);
+
+        // Posição do layout
         layout.setAlignment(Pos.CENTER);
-        //layout.add(button_ok, 0,5);
 
         // Scene initialized
         scene = new Scene(layout, 300, 250);
         button_ok.setOnAction(e -> {
-
+            System.out.println(comboBoxFornec.getSelectionModel().getSelectedItem() + " " + comboBoxIngred.getSelectionModel().getSelectedItem() + " " + TextFieldQtdeIngred.getText());
         });
 
-        // change window from Main to this scene
+        // Change window from Main to this scene
         Main.window.setScene(scene);
     }
-
-//    private static Button CriaButton(String text, int columnIndex, int rowIndex){
-//        Button button = new Button();
-//        button.setText(text);
-//        layout.add(button, columnIndex, rowIndex);
-//        return button;
-//    }
-//
-//    private static void CriaLabel(String text, int columnIndex, int rowIndex) {
-//        Label label = new Label(text);
-//        label.setTextAlignment(TextAlignment.JUSTIFY);
-//        layout.add(label, columnIndex, rowIndex);
-//    }
-//
-//    private static void CriaTextField(String text, int columnIndex, int rowIndex){
-//        TextField textField = new TextField();
-//        textField.setPromptText(text);
-//        layout.add(textField,columnIndex, rowIndex);
-//    }
 }
