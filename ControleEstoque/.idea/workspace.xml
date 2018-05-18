@@ -25,6 +25,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Fornecedor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TabelasBD/Fornecedor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <folding>
+                <element signature="method#Fornecedor#0;class#Fornecedor#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -47,10 +59,10 @@
         <option value="$PROJECT_DIR$/src/TabelasBD/Ingrediente.java" />
         <option value="$PROJECT_DIR$/src/TabelasBD/ProdutoFinal.java" />
         <option value="$PROJECT_DIR$/src/TabelasBD/Cliente.java" />
-        <option value="$PROJECT_DIR$/src/TabelasBD/Fornecedor.java" />
         <option value="$PROJECT_DIR$/src/TabelasBD/Producao.java" />
         <option value="$PROJECT_DIR$/src/TabelasBD/VendaProdutoFinal.java" />
         <option value="$PROJECT_DIR$/src/TabelasBD/Receita.java" />
+        <option value="$PROJECT_DIR$/src/TabelasBD/Fornecedor.java" />
       </list>
     </option>
   </component>
@@ -205,12 +217,12 @@
       <workItem from="1526585254341" duration="602000" />
       <workItem from="1526587304461" duration="8471000" />
       <workItem from="1526605263711" duration="1100000" />
-      <workItem from="1526667616837" duration="7709000" />
+      <workItem from="1526667616837" duration="8419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20240000" />
+    <option name="totallyTimeSpent" value="20950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -514,16 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TabelasBD/Fornecedor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="method#Fornecedor#0;class#Fornecedor#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TabelasBD/Ingrediente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -572,6 +574,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#VendaProdutoFinal#0;class#VendaProdutoFinal#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabelasBD/Fornecedor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="method#Fornecedor#0;class#Fornecedor#0" />
           </folding>
         </state>
       </provider>

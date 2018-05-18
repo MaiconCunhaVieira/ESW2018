@@ -35,7 +35,7 @@ public class Cliente {
         return telefone;
     }
 
-    public void Cliente(String CNPJ, String nome, String endereco, String telefone){
+    public Cliente(String CNPJ, String nome, String endereco, String telefone){
         this.CNPJ = CNPJ;
         this.nome = nome;
         this.endereco = endereco;
