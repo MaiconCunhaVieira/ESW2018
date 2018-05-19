@@ -3,13 +3,11 @@ package Scenes;
 import controleestoque.Main;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,9 +24,7 @@ public class CadastraProducao extends Cadastro {
         layout = new GridPane();
         layout.setVgap(5);
         layout.setHgap(5);
-
-        // Buttons added to scene
-        button_ok = CriaButton("OK", 0, 5);
+        layout.setAlignment(Pos.CENTER);
 
         // Labels added to scene
         CriaLabel("Informações:", 0, 0);
@@ -37,33 +33,32 @@ public class CadastraProducao extends Cadastro {
         CriaLabel("Hora:", 0, 3);
         CriaLabel("Quantidade:", 0, 4);
 
-        // TextFields added to scene
-        //CriaTextField("Produto", 1, 1);
-        //CriaTextField("Data", 1, 2);
-        textFieldHora = CriaTextField("Hora", 1, 3);
-        textFieldQtdeProd = CriaTextField("Quantidade", 1, 4);
-
         // ComboBoxes addded to scene
-        List<String> prodsNome = new ArrayList<>(); // quando BD for integrado, será lido do método SelectProdutosFinaisNome() da classe GerenciaProdutosFinais
+        List<String> prodsNome = new ArrayList<>();
         prodsNome.add("Fornec 1");
         prodsNome.add("Fornec 2");
         comboBoxProdutoFinal = CriaComboBox(prodsNome, 1, 1);
 
         // DatePicker added to scene
-        datePickerData = new DatePicker();
-        datePickerData.setOnAction(event -> {
-            LocalDate data = datePickerData.getValue();
-        });
-        layout.add(datePickerData, 1, 2);
+        datePickerData = CriaDatePicker(1, 2);
 
-        layout.setAlignment(Pos.CENTER);
+        // TextFields added to scene
+        textFieldHora = CriaTextField("Hora", 1, 3);
+        textFieldQtdeProd = CriaTextField("Quantidade", 1, 4);
+
+        // Buttons added to scene
+        button_ok = CriaButton("OK", 0, 5);
+        button_ok.setOnAction(e -> {
+            System.out.println(comboBoxProdutoFinal.getSelectionModel().getSelectedItem() + ", " + datePickerData.getValue() + ", " + textFieldQtdeProd.getText());
+        });
+
+        button_voltar = CriaButton("Voltar", 1, 5);
+        button_voltar.setOnAction(e -> {
+            Main.window.setScene(Main.scene);
+        });
 
         // Scene initialized
         scene = new Scene(layout, 300, 250);
-        button_ok.setOnAction(e -> {
-            // select produto final que tenha mesmo nome que o produto selecionado na comboBox
-            // insert nova produção com esse produto
-        });
 
         // change window from Main to this scene
         Main.window.setScene(scene);

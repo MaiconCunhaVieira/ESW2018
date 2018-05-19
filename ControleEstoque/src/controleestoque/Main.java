@@ -23,6 +23,7 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
     // Sem event handler: lambda expressions
     // lambda expressions = método de fazer as actions do botão de maneiras simples e eficaz.
     public static Stage window;
+    public static Scene scene;
     private GridPane layout;
     private MenuBar menuBar;
 
@@ -44,7 +45,7 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
 
         InitializeMenuBar();
 
-        Scene scene = new Scene(layout, 300, 250);
+        scene = new Scene(layout, 300, 250);
         window.setScene(scene);
         window.show();
     }

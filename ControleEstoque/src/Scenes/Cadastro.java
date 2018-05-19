@@ -3,19 +3,18 @@ package Scenes;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.TextAlignment;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public abstract class Cadastro implements Scenes.Scene {
 
     protected static Scene scene;
     protected static Button button_ok;
+    protected static Button button_voltar;
     protected static GridPane layout;
 
     protected static Button CriaButton(String text, int columnIndex, int rowIndex){
@@ -60,5 +59,14 @@ public abstract class Cadastro implements Scenes.Scene {
         }
         layout.add(comboBox, columnIndex, rowIndex);
         return comboBox;
+    }
+
+    protected static DatePicker CriaDatePicker(int columnIndex, int rowIndex){
+        DatePicker datePicker = new DatePicker();
+        datePicker.setOnAction(event -> {
+            LocalDate date = datePicker.getValue();
+        });
+        layout.add(datePicker, columnIndex, rowIndex);
+        return datePicker;
     }
 }
