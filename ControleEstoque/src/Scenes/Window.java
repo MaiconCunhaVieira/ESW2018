@@ -4,16 +4,16 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.TextAlignment;
 
 import java.time.LocalDate;
 import java.util.List;
 
-public abstract class Cadastro implements Scenes.Scene {
+public abstract class Window {
 
     protected static Scene scene;
-    protected static Button button_ok;
     protected static Button button_voltar;
     protected static GridPane layout;
 
@@ -68,5 +68,11 @@ public abstract class Cadastro implements Scenes.Scene {
         });
         layout.add(datePicker, columnIndex, rowIndex);
         return datePicker;
+    }
+
+    protected static TableColumn CriaTableColumn(TableColumn tableColumn, String classAttributeName, int minWidth){
+        tableColumn.setMinWidth(minWidth);
+        tableColumn.setCellValueFactory(new PropertyValueFactory<>(classAttributeName));
+        return tableColumn;
     }
 }

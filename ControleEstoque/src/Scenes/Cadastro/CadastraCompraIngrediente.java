@@ -1,15 +1,21 @@
-package Scenes;
+package Scenes.Cadastro;
 
-import controleestoque.Main;
+import Main.Main;
+import ManageDBTables.GerenciaCompraIngrediente;
+import ManageDBTables.GerenciaFornecedor;
+import ManageDBTables.GerenciaIngredientes;
+import TabelasBD.Fornecedor;
+import TabelasBD.Ingrediente;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CadastraCompraIngrediente extends Cadastro {
+public class CadastraCompraIngrediente extends WindowCadastro {
 
     private ComboBox<String> comboBoxFornec;
     private ComboBox<String> comboBoxIngred;
@@ -18,9 +24,9 @@ public class CadastraCompraIngrediente extends Cadastro {
     private TextField textFieldQtdeIngred;
     private TextField textFieldPreco;
 
-    public void ChangeScene(){
+    public void ChangeScene() {
 
-        // Layout cad_fornec
+        // Layout
         layout = new GridPane();
         layout.setVgap(5);
         layout.setHgap(5);
@@ -36,15 +42,8 @@ public class CadastraCompraIngrediente extends Cadastro {
         CriaLabel("Preço:", 0, 6);
 
         // ComboBoxes added to scene
-        List<String> fornecsNome = new ArrayList<>();
-        fornecsNome.add("Fornec 1");
-        fornecsNome.add("Fornec 2");
-        comboBoxFornec = CriaComboBox(fornecsNome, 1, 1);
-
-        List<String> ingredsNome = new ArrayList<>();
-        ingredsNome.add("Ingred 1");
-        ingredsNome.add("Ingred 2");
-        comboBoxIngred = CriaComboBox(ingredsNome, 1, 2);
+        comboBoxFornec = CriaComboBox(GerenciaFornecedor.SelectFornecedoresNome(), 1, 1);
+        comboBoxIngred = CriaComboBox(GerenciaIngredientes.SelectIngredientesNome(), 1, 2);
 
         // DatePicker added to scene
         datePickerData = CriaDatePicker(1, 3);
@@ -57,7 +56,23 @@ public class CadastraCompraIngrediente extends Cadastro {
         // Buttons added to scene
         button_ok = CriaButton("OK", 0, 8);
         button_ok.setOnAction(e -> {
-            System.out.println(comboBoxFornec.getSelectionModel().getSelectedItem() + ", " + comboBoxIngred.getSelectionModel().getSelectedItem() + ", " + datePickerData.getValue() + ", " + textFieldQtdeIngred.getText() + ", " + textFieldPreco.getText());
+            List<Fornecedor> fornecs = GerenciaFornecedor.SelectFornecedores();
+            String cnpj = "";
+            for(Fornecedor fornec : fornecs){
+                if(fornec.getNome().equals(comboBoxFornec.getSelectionModel().getSelectedItem())){
+                    cnpj = fornec.getCNPJ();
+                }
+            }
+
+            List<Ingrediente> ingreds = GerenciaIngredientes.SelectIngredientes();
+            int codIngred = 0;
+            for(Ingrediente ingred : ingreds){
+                if(ingred.getNome().equals(comboBoxIngred.getSelectionModel().getSelectedItem())){
+                    codIngred = ingred.getCod();
+                }
+            }
+            LocalTime hora = LocalTime.now();
+            GerenciaCompraIngrediente.InsertCompraIngrediente(cnpj, codIngred, datePickerData.getValue(), hora, Integer.parseInt(textFieldQtdeIngred.getText()), Float.parseFloat(textFieldPreco.getText()));
         });
 
         button_voltar = CriaButton("Voltar", 1, 8);
@@ -68,7 +83,7 @@ public class CadastraCompraIngrediente extends Cadastro {
         // Scene initialized
         scene = new Scene(layout, 300, 250);
 
-        // Change window from Main to this scene
+        // change window from Main to this scene
         Main.window.setScene(scene);
     }
 }
