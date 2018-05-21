@@ -48,7 +48,7 @@ public abstract class GerenciaProducao {
                             for(ProdutoFinal pf : prodFinais)
                                 if(pf.getCod() == codProd)
                                     nomeProdFinal = pf.getNome();
-                            ingredInsuficMessages.add("Impossível produzir " + qtde + " unidades do produto " + nomeProdFinal + ", necessário " + qtde * rec.getQtdeIngred() + " do ingrediente " + ingred.getNome() + ", estoque possui " + ingred.getQtdeAtual() + ".");
+                            ingredInsuficMessages.add("Impossível produzir " + qtde + " unidades do produto " + nomeProdFinal + ", necessário " + qtde * rec.getQtdeIngred() + " " + ingred.getUnidade() + " do ingrediente " + ingred.getNome() + ", estoque possui " + ingred.getQtdeAtual() + ".");
                             //System.out.println("Impossível produzir " + qtde + " unidades do produto " + nomeProdFinal + ", necessário " + qtde * rec.getQtdeIngred() + " do ingrediente " + ingred.getNome() + ", estoque possui " + ingred.getQtdeAtual() + ".");
                             peloMenosUmIngredienteSemQuantidadeSuficiente = true;
                         }
@@ -75,6 +75,8 @@ public abstract class GerenciaProducao {
 
                 // atualiza quantidade do produto
                 GerenciaProdutoFinal.UpdateProdutoFinalAumentarQtdePronta(codProd, qtde);
+
+                JanelaAlerta.Display("", "Cadastro de Produção bem sucedido");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());

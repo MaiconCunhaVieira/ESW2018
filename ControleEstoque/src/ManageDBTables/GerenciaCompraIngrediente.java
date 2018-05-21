@@ -1,6 +1,7 @@
 package ManageDBTables;
 
 import DB.Database;
+import Scenes.JanelaAlerta;
 import TabelasBD.CompraIngrediente;
 
 import java.sql.ResultSet;
@@ -35,6 +36,8 @@ public abstract class GerenciaCompraIngrediente {
 
             // atualizar qtdeAtual do ingrediente comprado
             GerenciaIngredientes.UpdateIngredienteAumentarQtdeAtual(codIngred, qtde);
+
+            JanelaAlerta.Display("", "Cadastro de Compra de Ingrediente bem sucedido");
 
         } catch(Exception e){
             System.out.println(e.getMessage());

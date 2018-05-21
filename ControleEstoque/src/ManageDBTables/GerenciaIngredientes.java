@@ -19,7 +19,7 @@ public abstract class GerenciaIngredientes {
             ResultSet rs = Database.ExecuteSelect(selectIngred);
             List<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
             while(rs.next()){
-                ingredientes.add(new Ingrediente(rs.getInt(1), rs.getString(2), rs.getInt(3)));
+                ingredientes.add(new Ingrediente(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4)));
             }
             return ingredientes;
         } catch(Exception e) {
@@ -33,7 +33,7 @@ public abstract class GerenciaIngredientes {
             ResultSet rs = Database.ExecuteSelect(selectIngred);
             ObservableList<Ingrediente> ingredientes = FXCollections.observableArrayList();
             while(rs.next()){
-                ingredientes.add(new Ingrediente(rs.getInt(1), rs.getString(2), rs.getInt(3)));
+                ingredientes.add(new Ingrediente(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4)));
             }
             return ingredientes;
         } catch(Exception e) {

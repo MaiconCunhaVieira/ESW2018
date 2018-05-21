@@ -39,7 +39,7 @@ public abstract class GerenciaVendaProdutoFinal {
             for(ProdutoFinal pf : prodsFinais){
                 if(pf.getCod() == codProd){
                     if(pf.getQtdePronta() < qtdeVendida){
-                        ingredInsuficienteMessage = "Impossível vender " + qtdeVendida + " unidades do produto " + pf.getNome() + ", estoque possui apenas " + pf.getQtdePronta() + ".";
+                        ingredInsuficienteMessage = "Impossível vender " + qtdeVendida + " unidades do produto " + pf.getNome() + ", estoque possui apenas " + pf.getQtdePronta() + " unidades.";
                         //System.out.println("Impossível vender " + qtdeVendida + " unidades do produto " + pf.getNome() + ", estoque possui apenas " + pf.getQtdePronta() + ".");
                         qtdeEmEstoqueInsuficiente = true;
                     }
@@ -56,6 +56,8 @@ public abstract class GerenciaVendaProdutoFinal {
 
                 // atualiza quantidade to produto em estoque
                 GerenciaProdutoFinal.UpdateProdutoFinalDiminuirQtdePronta(codProd, qtdeVendida);
+
+                JanelaAlerta.Display("", "Cadastro de Venda de Produto bem sucedido");
             }
         } catch(Exception e){
             System.out.println(e.getMessage());

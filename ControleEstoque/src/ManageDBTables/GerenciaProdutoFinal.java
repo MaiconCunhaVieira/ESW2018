@@ -1,6 +1,7 @@
 package ManageDBTables;
 
 import DB.Database;
+import Scenes.JanelaAlerta;
 import TabelasBD.ProdutoFinal;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -60,6 +61,8 @@ public abstract class GerenciaProdutoFinal {
     public static void InsertProdutoFinal(String nome, float preco, int peso){
         try {
             int inserted = Database.ExecuteInsertUpdateORDelete(insertProdutoFinal + "('" + nome + "', " + preco + ", " + peso + ");");
+
+            JanelaAlerta.Display("", "Cadastro de Produto bem sucedido");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
