@@ -56,7 +56,7 @@ public abstract class GerenciaProducao {
                 }
             }
 
-            if(ingredInsuficMessages != null)
+            if(!ingredInsuficMessages.isEmpty())
                 JanelaAlerta.Display("Ingredientes insuficientes", ingredInsuficMessages);
 
             // se tem quantidade suficiente de ingrediente para cada ingrediente da receita do produto

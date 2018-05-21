@@ -6,6 +6,7 @@ public class Ingrediente {
     private String nome;
     private int qtdeAtual;
 
+
     // setters
     public void setCod(int cod){
         this.cod = cod;
