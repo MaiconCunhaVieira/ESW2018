@@ -16,6 +16,7 @@ public abstract class GerenciaProdutoFinal {
     private static String selectProdutosFinaisNome = "SELECT nome FROM ProdutoFinal";
     private static String insertProdutoFinal = "INSERT INTO ProdutoFinal (nome, preco, peso ) VALUES ";
 
+    // Faz a pesquisa de todos os produtos, retornando uma lista de produtos
     public static List<ProdutoFinal> SelectProdutosFinais(){
         try {
             ResultSet rs = Database.ExecuteSelect(selectProdutosFinais);
@@ -30,6 +31,7 @@ public abstract class GerenciaProdutoFinal {
         }
     }
 
+    // Faz a pesquisa de todos os produtos, retornando uma lista de produtos que será inserida em uma tabela
     public static ObservableList<ProdutoFinal> SelectProdutosFinaisForTable(){
         try {
             ResultSet rs = Database.ExecuteSelect(selectProdutosFinais);
@@ -44,6 +46,7 @@ public abstract class GerenciaProdutoFinal {
         }
     }
 
+    // Faz a pesquisa do nome de todos os produtos, retornando uma lista de nomes (string)
     public static List<String> SelectProdutosFinaisNome(){
         try {
             ResultSet rs = Database.ExecuteSelect(selectProdutosFinaisNome);
@@ -58,6 +61,7 @@ public abstract class GerenciaProdutoFinal {
         }
     }
 
+    // Insere um novo produto no BD
     public static void InsertProdutoFinal(String nome, float preco, int peso){
         try {
             int inserted = Database.ExecuteInsertUpdateORDelete(insertProdutoFinal + "('" + nome + "', " + preco + ", " + peso + ");");
@@ -68,6 +72,7 @@ public abstract class GerenciaProdutoFinal {
         }
     }
 
+    // Atualiza a quantidade atual de um produto, aumentando a quantidade
     public static void UpdateProdutoFinalAumentarQtdePronta(int cod, int qtdeProduzida){
         try{
             Database.ExecuteInsertUpdateORDelete("UPDATE ProdutoFinal SET qtdePronta = qtdePronta + " + qtdeProduzida + " WHERE cod = " + cod + ";");
@@ -76,6 +81,7 @@ public abstract class GerenciaProdutoFinal {
         }
     }
 
+    // Atualiza a quantidade atual de um produto, diminuindo a quantidade
     public static void UpdateProdutoFinalDiminuirQtdePronta(int cod, int qtdeVendida){
         try{
             Database.ExecuteInsertUpdateORDelete("UPDATE ProdutoFinal SET qtdePronta = qtdePronta - " + qtdeVendida + " WHERE cod = " + cod + ";");

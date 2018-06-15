@@ -1,5 +1,6 @@
 package TabelasBD;
 
+// classe contém dados da tabela de fornecedores
 public class Fornecedor {
 
     private String CNPJ;

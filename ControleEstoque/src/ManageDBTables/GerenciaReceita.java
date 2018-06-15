@@ -11,6 +11,7 @@ public abstract class GerenciaReceita {
 
     private static String selectReceita = "SELECT codIngred, qtdeIngred FROM Receita WHERE codProd = ";
 
+    // Faz a pesquisa da receita de um único ingrediente, retornando uma lista de receitas
     public static List<Receita> SelectReceitas(int codProd){
         try {
             ResultSet rs = Database.ExecuteSelect(selectReceita + codProd + ";");

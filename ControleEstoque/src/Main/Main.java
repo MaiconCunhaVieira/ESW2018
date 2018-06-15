@@ -1,7 +1,5 @@
-// Criado por Octavio Arruda 10 05 18
 package Main;
 
-// Para a GUI(JavaFX)
 import Scenes.Cadastro.CadastraCompraIngrediente;
 import Scenes.Cadastro.CadastraProducao;
 import Scenes.Cadastro.CadastraVendaProduto;
@@ -14,19 +12,16 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+public class Main extends Application {
 
-public class Main extends Application/* implements EventHandler<ActionEvent> */{
-    // Sem event handler: lambda expressions
-    // lambda expressions = método de fazer as actions do botão de maneiras simples e eficaz.
-    public static Stage window;
-    public static Scene scene;
-    private GridPane layout;
-    private MenuBar menuBar;
+    public static Stage window; // janela principal do sistema
+    public static Scene scene; // cena da janela
+    private GridPane layout; // layout da cena
+    private MenuBar menuBar; // barra de menu no topo da janela
 
     public static void main(String[] args) {
 
-        //System.out.println("Debug");
-        launch(args);
+        launch(args); // chama método 'start'
     }
 
     @Override
@@ -36,8 +31,6 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
         window.setTitle("Controle de Estoque");
         layout = new GridPane();
         layout.setMinSize(400, 200);
-        //layout.setPadding(new Insets(0, 0, 0, 0));
-        //layout.getChildren().add(button_fornec);
 
         InitializeMenuBar();
 
@@ -46,14 +39,17 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
         window.show();
     }
 
+    // Método faz toda a inicialização da barra de menu da janela principal
     private void InitializeMenuBar(){
-        menuBar = new MenuBar();
+        menuBar = new MenuBar(); // inicializa a barra de menu
 
+        // cria o menu de cadastros e seus itens de menu (submenus)
         Menu menuCadastrar = new Menu("Cadastrar");
         MenuItem itemCadCompraIngred = new MenuItem("Compra de Ingrediente");
         MenuItem itemCadProducao = new MenuItem("Produção");
         MenuItem itemCadVendaProd = new MenuItem("Venda de Produto");
 
+        // cria o menu de pesquisas e seus itens de menu (submenus)
         Menu menuPesquisar = new Menu("Pesquisar");
         MenuItem itemPesqCompraIngred = new MenuItem("Compra de Ingrediente");
         MenuItem itemPesqProducao = new MenuItem("Produção");
@@ -61,20 +57,23 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
         MenuItem itemPesqIngrediente = new MenuItem("Ingrediente");
         MenuItem itemPesqVendaProdFinal = new MenuItem("Venda de Produto");
 
+        // adiciona os menus na barra de menu
         menuBar.getMenus().addAll(menuCadastrar, menuPesquisar);
+
+        // adiciona no menu de cadastro os itens de menu (submenus)
         menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd);
+
+        // adiciona no menu de pesquisa os itens de menu (submenus)
         menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal);
 
+        // abaixo está a ação (o que acontece quando o usuário clica com o mouse) para cada item de menu (submenu)
+        // resumindo, cria-se a instância de cena adequada e chama o método que muda a cena atual
         itemCadCompraIngred.setOnAction(event -> {
-            //System.out.println("Lambda expression button");
-            //System.out.println("Equivale ao void handle...");
             CadastraCompraIngrediente cadCompraIngred = new CadastraCompraIngrediente();
             cadCompraIngred.ChangeScene();
         });
 
         itemCadProducao.setOnAction(event -> {
-            //System.out.println("Lambda expression button");
-            //System.out.println("Equivale ao void handle...");
             CadastraProducao cadProducao = new CadastraProducao();
             cadProducao.ChangeScene();
         });
@@ -109,16 +108,7 @@ public class Main extends Application/* implements EventHandler<ActionEvent> */{
             pesqVendaProd.ChangeScene();
         });
 
+        // adiciona a barra de menu no layout da janela
         layout.add(menuBar, 0, 0);
     }
-
-    /*
-    @Override
-    public void handle(ActionEvent event) { // Quando o usuário clica no botão
-        // Código aqui
-        if(event.getSource() == button){ // Qual botão causou o evento
-            System.out.println("Don' touch me");
-        }
-    }
-    */
 }

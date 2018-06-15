@@ -14,6 +14,7 @@ public abstract class GerenciaClienteProdutoVenda {
                     "FROM Cliente, ProdutoFinal, VendaProd " +
                     "WHERE VendaProd.CNPJCLiente = Cliente.CNPJ AND VendaProd.codProd = ProdutoFinal.cod;";
 
+    // Faz a pesquisa de todas as vendas feitas, retornando não só os dados da venda como também o nome do produto vendido e o nome do cliente que comprou
     public static ObservableList<ClienteProdutoVenda> SelectClienteProdutoVenda(){
         try{
             ObservableList<ClienteProdutoVenda> vendasProdFinal = FXCollections.observableArrayList();

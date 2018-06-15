@@ -1,12 +1,12 @@
 package TabelasBD;
 
+// classe contém dados da tabela de ingredientes
 public class Ingrediente {
 
     private int cod;
     private String nome;
     private int qtdeAtual;
     private String unidade;
-
 
     // setters
     public void setCod(int cod){

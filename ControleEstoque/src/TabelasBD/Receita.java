@@ -1,5 +1,6 @@
 package TabelasBD;
 
+// classe contém dados da tabela de receitas
 public class Receita {
 
     private int codProd;

@@ -1,5 +1,6 @@
 package TabelasBD;
 
+// classe contém dados da tabela de clientes
 public class Cliente {
 
     private String CNPJ;

@@ -3,6 +3,7 @@ package TabelasBD;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+// classe contém dados da tabela de vendas
 public class VendaProdutoFinal {
 
     private String CNPJCliente;

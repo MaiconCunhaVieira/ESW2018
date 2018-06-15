@@ -3,6 +3,7 @@ package TabelasBDCombinadas;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+// classe contém dados das tabelas de fornecedores, de ingredientes e de compras
 public class FornecIngredCompra {
 
     private String nomeFornec;

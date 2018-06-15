@@ -14,6 +14,7 @@ public abstract class GerenciaProdutoFinalProducao {
                     "FROM ProdutoFinal, Producao " +
                     "WHERE ProdutoFinal.cod = Producao.codProd;";
 
+    // Faz a pesquisa de todas as produções, retornando não só os dados da produção como também o nome do produto produzido
     public static ObservableList<ProdutoFinalProducao> SelectProducao(){
         try{
             ObservableList<ProdutoFinalProducao> producoes = FXCollections.observableArrayList();

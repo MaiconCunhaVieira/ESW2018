@@ -12,6 +12,7 @@ public abstract class GerenciaFornecedor {
     private static String selectFornec = "SELECT * FROM Fornecedor";
     private static String selectFornecNome = "SELECT nome FROM Fornecedor";
 
+    // Faz a pesquisa de todos os fornecedores, retornando uma lista de fornecedores
     public static List<Fornecedor> SelectFornecedores(){
         try {
             ResultSet rs = Database.ExecuteSelect(selectFornec);
@@ -26,6 +27,7 @@ public abstract class GerenciaFornecedor {
         }
     }
 
+    // Faz a pesquisa do nome de todos os fornecedores, retornando uma lista de nomes (string)
     public static List<String> SelectFornecedoresNome(){
         try {
             ResultSet rs = Database.ExecuteSelect(selectFornecNome);

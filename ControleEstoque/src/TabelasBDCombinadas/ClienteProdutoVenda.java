@@ -3,6 +3,7 @@ package TabelasBDCombinadas;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+// classe contém dados da tabelas de clientes, de produtos e de vendas
 public class ClienteProdutoVenda {
 
     private String nomeCliente;

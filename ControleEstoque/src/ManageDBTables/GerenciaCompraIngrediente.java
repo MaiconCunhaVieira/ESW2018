@@ -15,9 +15,10 @@ public abstract class GerenciaCompraIngrediente {
     private static String selectCompraIngred = "SELECT * FROM CompraIngred";
     private static String insertCompraIngred = "INSERT INTO CompraIngred (CNPJFornec, codIngred, data, hora, qtdeIngred, preco) VALUES ";
 
+    // Faz a pesquisa de todas as compras de ingredientes, retornando uma lista de compras de ingredientes
     public static List<CompraIngrediente> SelectComprasIngredientes(){
         try {
-            ResultSet rs = Database.ExecuteSelect(selectCompraIngred); // ResultSet tem os dados lidos do BD
+            ResultSet rs = Database.ExecuteSelect(selectCompraIngred);
             List<CompraIngrediente> compraIngreds = new ArrayList<>();
             while(rs.next()){
                 compraIngreds.add(new CompraIngrediente(rs.getString(1), rs.getInt(2), rs.getDate(3).toLocalDate(), rs.getTime(4).toLocalTime(), rs.getInt(5), rs.getFloat(6)));
@@ -29,14 +30,16 @@ public abstract class GerenciaCompraIngrediente {
         }
     }
 
+    // Insere uma nova compra de ingrediente no BD
     public static void InsertCompraIngrediente(String CNPJFornec, int codIngred, LocalDate data, LocalTime hora, int qtde, float preco){
         try{
-            // inserir compra na tabela CompraIngred
+            // insere nova compra no BD
             Database.ExecuteInsertUpdateORDelete(insertCompraIngred + "('" + CNPJFornec + "', " + codIngred + ", '" + data + "', '" + hora + "', " + qtde + ", " + preco + ");");
 
-            // atualizar qtdeAtual do ingrediente comprado
+            // atualiza quantidade do ingrediente comprado
             GerenciaIngredientes.UpdateIngredienteAumentarQtdeAtual(codIngred, qtde);
 
+            // mostra mensagem de sucesso
             JanelaAlerta.Display("", "Cadastro de Compra de Ingrediente bem sucedido");
 
         } catch(Exception e){

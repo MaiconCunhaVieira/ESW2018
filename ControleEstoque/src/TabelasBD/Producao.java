@@ -3,6 +3,7 @@ package TabelasBD;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+// classe contém dados databela de produções
 public class Producao {
 
     private int codProd;

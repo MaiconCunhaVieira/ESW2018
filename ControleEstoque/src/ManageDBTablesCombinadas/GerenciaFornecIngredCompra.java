@@ -14,6 +14,7 @@ public abstract class GerenciaFornecIngredCompra {
                     "FROM CompraIngred, Fornecedor, Ingrediente " +
                     "WHERE CompraIngred.codIngred = Ingrediente.cod AND CompraIngred.CNPJFornec = Fornecedor.CNPJ;";
 
+    // Faz a pesquisa de todas as compras de ingredientes, retornando não só os dados da compra como também o nome do ingrediente comprado e o nome do fornecedor que vendeu
     public static ObservableList<FornecIngredCompra> SelectCompraIngred(){
         try{
             ObservableList<FornecIngredCompra> comprasIngred = FXCollections.observableArrayList();
