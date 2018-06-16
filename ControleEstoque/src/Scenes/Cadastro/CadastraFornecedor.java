@@ -42,10 +42,10 @@ public class CadastraFornecedor extends WindowCadastro {
             String CNPJFornec = textFieldCNPJFornec.getText();
             String nomeFornec = textFieldNomeFornec.getText();
             String enderecoFornec = textFieldEnderecoFornec.getText();
-            String telefoneForec = textFieldTeledoneFornec.getText();
+            String telefoneFornec = textFieldTeledoneFornec.getText();
 
-            if(!CNPJFornec.isEmpty() & !nomeFornec.isEmpty() & !enderecoFornec.isEmpty() & !telefoneForec.isEmpty()){
-                GerenciaFornecedor.InsertNovoFornecedor(CNPJFornec, nomeFornec, enderecoFornec, telefoneForec);
+            if(!CNPJFornec.isEmpty() & !nomeFornec.isEmpty() & !enderecoFornec.isEmpty() & !telefoneFornec.isEmpty()){
+                GerenciaFornecedor.InsertNovoFornecedor(CNPJFornec, nomeFornec, enderecoFornec, telefoneFornec);
                 JanelaAlerta.Display("Sucesso", "Novo fornecedor adicionado.");
             }
             else {

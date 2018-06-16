@@ -78,4 +78,12 @@ public abstract class GerenciaCliente {
             return null;
         }
     }
+
+    public static void InsertNovoCliente(String cnpj, String nome, String endereco, String telefone){
+        try {
+            Database.ExecuteInsertUpdateORDelete("INSERT INTO Cliente (CNPJ, nome, endereco, telefone) VALUES ('" + cnpj + "', '" + nome + "', '" + endereco + "', '" + telefone + "');");
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
 }
