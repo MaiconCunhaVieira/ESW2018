@@ -2,15 +2,13 @@ package Scenes.Pesquisa;
 
 import Main.Main;
 import ManageDBTables.GerenciaIngredientes;
-import Scenes.Scene;
-import Scenes.Window;
 import TabelasBD.Ingrediente;
 import javafx.geometry.Pos;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.GridPane;
 
-public class PesquisaIngrediente extends Window implements Scene {
+public class PesquisaIngrediente extends WindowPesquisa {
 
     private TableView<Ingrediente> table;
 

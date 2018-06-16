@@ -2,8 +2,6 @@ package Scenes.Pesquisa;
 
 import Main.Main;
 import ManageDBTablesCombinadas.GerenciaProdutoFinalProducao;
-import Scenes.Scene;
-import Scenes.Window;
 import TabelasBDCombinadas.ProdutoFinalProducao;
 import javafx.geometry.Pos;
 import javafx.scene.control.TableColumn;
@@ -13,7 +11,7 @@ import javafx.scene.layout.GridPane;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class PesquisaProducao extends Window implements Scene {
+public class PesquisaProducao extends WindowPesquisa {
 
     private TableView<ProdutoFinalProducao> table;
 

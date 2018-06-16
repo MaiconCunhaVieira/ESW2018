@@ -2,15 +2,13 @@ package Scenes.Pesquisa;
 
 import Main.Main;
 import ManageDBTables.GerenciaFornecedor;
-import Scenes.Scene;
-import Scenes.Window;
 import TabelasBD.Fornecedor;
 import javafx.geometry.Pos;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.GridPane;
 
-public class PesquisaFornecedor extends Window implements Scene {
+public class PesquisaFornecedor extends WindowPesquisa {
 
     private TableView<Fornecedor> table;
 

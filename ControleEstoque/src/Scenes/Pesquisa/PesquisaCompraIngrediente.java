@@ -2,8 +2,6 @@ package Scenes.Pesquisa;
 
 import Main.Main;
 import ManageDBTablesCombinadas.GerenciaFornecIngredCompra;
-import Scenes.Scene;
-import Scenes.Window;
 import TabelasBDCombinadas.FornecIngredCompra;
 import javafx.geometry.Pos;
 import javafx.scene.control.TableColumn;
@@ -13,7 +11,7 @@ import javafx.scene.layout.GridPane;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class PesquisaCompraIngrediente extends Window implements Scene {
+public class PesquisaCompraIngrediente extends WindowPesquisa {
 
     private TableView<FornecIngredCompra> table;
 
