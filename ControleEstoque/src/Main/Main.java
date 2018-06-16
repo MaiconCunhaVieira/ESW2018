@@ -1,9 +1,6 @@
 package Main;
 
-import Scenes.Cadastro.CadastraCompraIngrediente;
-import Scenes.Cadastro.CadastraIngrediente;
-import Scenes.Cadastro.CadastraProducao;
-import Scenes.Cadastro.CadastraVendaProduto;
+import Scenes.Cadastro.*;
 import Scenes.Pesquisa.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -50,6 +47,7 @@ public class Main extends Application {
         MenuItem itemCadProducao = new MenuItem("Produção");
         MenuItem itemCadVendaProd = new MenuItem("Venda de Produto");
         MenuItem itemCadIngred = new MenuItem("Ingrediente");
+        MenuItem itemCadFornec = new MenuItem("Fornecedor");
 
         // cria o menu de pesquisas e seus itens de menu (submenus)
         Menu menuPesquisar = new Menu("Pesquisar");
@@ -66,7 +64,7 @@ public class Main extends Application {
         menuBar.getMenus().addAll(menuCadastrar, menuPesquisar);
 
         // adiciona no menu de cadastro os itens de menu (submenus)
-        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred);
+        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred, itemCadFornec);
 
         // adiciona no menu de pesquisa os itens de menu (submenus)
         menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita);
@@ -95,7 +93,12 @@ public class Main extends Application {
             cadIngred.ChangeScene();
         });
 
-        
+        itemCadFornec.setOnAction(event -> {
+            CadastraFornecedor cadFornec = new CadastraFornecedor();
+            cadFornec.ChangeScene();
+        });
+
+
         // Ações dos itens de menu do tipo PESQUISA
         itemPesqCompraIngred.setOnAction(event -> {
             PesquisaCompraIngrediente pesqCompraIngred = new PesquisaCompraIngrediente();

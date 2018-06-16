@@ -58,4 +58,14 @@ public abstract class GerenciaFornecedor {
             return null;
         }
     }
+
+    public static void InsertNovoFornecedor(String cnpj, String nome, String endereco, String telefone){
+        try{
+            // insere novo fornecedor
+            Database.ExecuteInsertUpdateORDelete("INSERT INTO Fornecedor VALUES ('" + cnpj + "', '" + nome + "', '" + endereco + "', '" + telefone + "');");
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
 }

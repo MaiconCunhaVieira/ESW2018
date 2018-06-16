@@ -2,6 +2,7 @@ package Scenes.Cadastro;
 
 import Main.Main;
 import ManageDBTables.GerenciaIngredientes;
+import Scenes.JanelaAlerta;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
@@ -35,7 +36,14 @@ public class CadastraIngrediente extends WindowCadastro {
             String nomeIngrediente = textFieldNomeIngrediente.getText();
             String unidadeIngrediente = textFieldUnidadeIngrediente.getText();
 
-            GerenciaIngredientes.InsertNovoIngrediente(nomeIngrediente, unidadeIngrediente);
+            // se nenhum dos dados de entrada estiverem vazios
+            if(!nomeIngrediente.isEmpty() & !unidadeIngrediente.isEmpty()) {
+                GerenciaIngredientes.InsertNovoIngrediente(nomeIngrediente, unidadeIngrediente);
+                JanelaAlerta.Display("Sucesso", "Novo ingrediente adicionado.");
+            }
+            else {
+                JanelaAlerta.Display("Erro", "Dados de entrada devem ser preenchidos.");
+            }
         });
 
         // inicializa botão que volta para a tela principal
