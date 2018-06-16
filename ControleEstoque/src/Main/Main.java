@@ -57,6 +57,7 @@ public class Main extends Application {
         MenuItem itemPesqIngrediente = new MenuItem("Ingrediente");
         MenuItem itemPesqVendaProdFinal = new MenuItem("Venda de Produto");
         MenuItem itemPesqFornecedor = new MenuItem("Fornecedor");
+        MenuItem itemPesqCliente = new MenuItem("Cliente");
 
         // adiciona os menus na barra de menu
         menuBar.getMenus().addAll(menuCadastrar, menuPesquisar);
@@ -65,7 +66,7 @@ public class Main extends Application {
         menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd);
 
         // adiciona no menu de pesquisa os itens de menu (submenus)
-        menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor);
+        menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente);
 
         // abaixo está a ação (o que acontece quando o usuário clica com o mouse) para cada item de menu (submenu)
         // resumindo, cria-se a instância de cena adequada e chama o método que muda a cena atual
@@ -112,6 +113,11 @@ public class Main extends Application {
         itemPesqFornecedor.setOnAction(event -> {
             PesquisaFornecedor pesqFornec = new PesquisaFornecedor();
             pesqFornec.ChangeScene();
+        });
+
+        itemPesqCliente.setOnAction(event -> {
+            PesquisaCliente pesqCliente = new PesquisaCliente();
+            pesqCliente.ChangeScene();
         });
 
         // adiciona a barra de menu no layout da janela

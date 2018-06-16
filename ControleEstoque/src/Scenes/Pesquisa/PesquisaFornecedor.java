@@ -22,7 +22,7 @@ public class PesquisaFornecedor extends Window implements Scene {
         layout.setAlignment(Pos.CENTER);
 
         // cria e inicializa coluna com o cnpj do fornecedor
-        TableColumn<Fornecedor, String> columnCNPJFornec = new TableColumn<>("Código do fornecedor");
+        TableColumn<Fornecedor, String> columnCNPJFornec = new TableColumn<>("CNPJ do fornecedor");
         columnCNPJFornec = CriaTableColumn(columnCNPJFornec, "CNPJ", 150);
 
         // cria e inicializa coluna com o nome do fornecedor
