@@ -2,6 +2,8 @@ package ManageDBTables;
 
 import DB.Database;
 import TabelasBD.Fornecedor;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -17,6 +19,21 @@ public abstract class GerenciaFornecedor {
         try {
             ResultSet rs = Database.ExecuteSelect(selectFornec);
             List<Fornecedor> fornecedores = new ArrayList<Fornecedor>();
+            while(rs.next()){
+                fornecedores.add(new Fornecedor(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4)));
+            }
+            return fornecedores;
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    // Faz a pesquisa de todos os fornecedores, retornando uma lista de fornecedores que será inserida em uma tabela
+    public static ObservableList<Fornecedor> SelectFornecedoresForTable(){
+        try {
+            ResultSet rs = Database.ExecuteSelect(selectFornec);
+            ObservableList<Fornecedor> fornecedores = FXCollections.observableArrayList();
             while(rs.next()){
                 fornecedores.add(new Fornecedor(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4)));
             }
