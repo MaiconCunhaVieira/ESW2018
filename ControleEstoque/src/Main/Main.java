@@ -1,6 +1,7 @@
 package Main;
 
 import Scenes.Cadastro.CadastraCompraIngrediente;
+import Scenes.Cadastro.CadastraIngrediente;
 import Scenes.Cadastro.CadastraProducao;
 import Scenes.Cadastro.CadastraVendaProduto;
 import Scenes.Pesquisa.*;
@@ -48,6 +49,7 @@ public class Main extends Application {
         MenuItem itemCadCompraIngred = new MenuItem("Compra de Ingrediente");
         MenuItem itemCadProducao = new MenuItem("Produção");
         MenuItem itemCadVendaProd = new MenuItem("Venda de Produto");
+        MenuItem itemCadIngred = new MenuItem("Ingrediente");
 
         // cria o menu de pesquisas e seus itens de menu (submenus)
         Menu menuPesquisar = new Menu("Pesquisar");
@@ -64,13 +66,15 @@ public class Main extends Application {
         menuBar.getMenus().addAll(menuCadastrar, menuPesquisar);
 
         // adiciona no menu de cadastro os itens de menu (submenus)
-        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd);
+        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred);
 
         // adiciona no menu de pesquisa os itens de menu (submenus)
         menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita);
 
         // abaixo está a ação (o que acontece quando o usuário clica com o mouse) para cada item de menu (submenu)
         // resumindo, cria-se a instância de cena adequada e chama o método que muda a cena atual
+
+        // Ações dos itens de menu do tipo CADASTRO
         itemCadCompraIngred.setOnAction(event -> {
             CadastraCompraIngrediente cadCompraIngred = new CadastraCompraIngrediente();
             cadCompraIngred.ChangeScene();
@@ -86,6 +90,13 @@ public class Main extends Application {
             cadVendaProd.ChangeScene();
         });
 
+        itemCadIngred.setOnAction(event -> {
+            CadastraIngrediente cadIngred = new CadastraIngrediente();
+            cadIngred.ChangeScene();
+        });
+
+        
+        // Ações dos itens de menu do tipo PESQUISA
         itemPesqCompraIngred.setOnAction(event -> {
             PesquisaCompraIngrediente pesqCompraIngred = new PesquisaCompraIngrediente();
             pesqCompraIngred.ChangeScene();

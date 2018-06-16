@@ -94,4 +94,14 @@ public abstract class GerenciaIngredientes {
             System.out.println(e.getMessage());
         }
     }
+
+    public static void InsertNovoIngrediente(String nome, String unidade){
+        try{
+            // insere novo ingrediente
+            Database.ExecuteInsertUpdateORDelete("INSERT INTO Ingrediente (nome, unidade) VALUES ('" + nome + "', '" + unidade + "');");
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
 }
