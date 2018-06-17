@@ -1,6 +1,6 @@
 package TabelasBDCombinadas;
 
-public class IngredienteProducao {
+public class IngredienteReceitaProducao {
 
     private String nomeIngrediente;
     private int qtdeReceita;
@@ -16,7 +16,7 @@ public class IngredienteProducao {
     public int getQtdeReceita() { return qtdeReceita; }
     public int getQtdeProduzida() { return qtdeProduzida; }
 
-    public IngredienteProducao(String nomeIngrediente, int qtdeReceita, int qtdeProduzida) {
+    public IngredienteReceitaProducao(String nomeIngrediente, int qtdeReceita, int qtdeProduzida) {
         this.nomeIngrediente = nomeIngrediente;
         this.qtdeReceita = qtdeReceita;
         this.qtdeProduzida = qtdeProduzida;
