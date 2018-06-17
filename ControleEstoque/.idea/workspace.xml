@@ -15,8 +15,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="530">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
               <folding>
                 <element signature="method#main#0;class#Main#0" />
                 <element signature="method#start#0;class#Main#0" />
@@ -35,17 +35,49 @@
                 <element signature="e#5575#5703#0" />
                 <element signature="e#5743#5867#0" />
                 <element signature="e#5907#6057#0" />
-                <element signature="e#6578#6633#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IngredienteReceitaProducao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteReceitaProducao.java">
+      <file leaf-file-name="GerenciaDadosEstatCliente.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-578">
+              <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClienteVendaProdutoVendido.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/ClienteVendaProdutoVendido.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DadosEstatCliente.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatCliente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneDadosEstatClientes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatClientes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="636">
+              <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,16 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ManageDBTables/GerenciaProdutoFinal.java" />
-        <option value="$PROJECT_DIR$/src/ManageDBTables/GerenciaReceita.java" />
-        <option value="$PROJECT_DIR$/src/ManageDBTables/GerenciaCompraIngrediente.java" />
-        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaClienteProdutoVenda.java" />
-        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaFornecIngredCompra.java" />
-        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaProdutoFinalProducao.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Cadastro/CadastraProducao.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Cadastro/CadastraCompraIngrediente.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Cadastro/CadastraVendaProduto.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/JanelaAlerta.java" />
         <option value="$PROJECT_DIR$/src/Scenes/Scene.java" />
         <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/ClienteProdutoVenda.java" />
         <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/FornecIngredCompra.java" />
@@ -108,12 +130,22 @@
         <option value="$PROJECT_DIR$/src/TabelasBD/ProdutoFinal.java" />
         <option value="$PROJECT_DIR$/src/Scenes/Cadastro/CadastraProdutoFinal.java" />
         <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteProducao.java" />
-        <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteQtdeConsumida.java" />
         <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaIngredienteProducao.java" />
         <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteReceitaProducao.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/DadosEstatisticos/DadosEstatIngredientes.java" />
         <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaIngredienteReceitaProducao.java" />
+        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstCliente.java" />
+        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstIngrediente.java" />
+        <option value="$PROJECT_DIR$/src/Scenes/DadosEstatisticos/DadosEstatIngredientes.java" />
+        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatIngrediente.java" />
+        <option value="$PROJECT_DIR$/src/Scenes/DadosEstatisticos/DadosEstatClientes.java" />
+        <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatCliente.java" />
+        <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/VendaProdClienteProduto.java" />
+        <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/ClienteVendaProdutoVendido.java" />
+        <option value="$PROJECT_DIR$/src/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatClientes.java" />
+        <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/NomeProdutoQtdeVendida.java" />
+        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatCliente.java" />
       </list>
     </option>
   </component>
@@ -165,6 +197,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Scenes" type="462c0819:PsiDirectoryNode" />
               <item name="DadosEstatisticos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ControleEstoque" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ControleEstoque" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TabelasBD" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ControleEstoque" type="b2602c69:ProjectViewProjectNode" />
@@ -294,7 +332,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67556000" />
+    <option name="totallyTimeSpent" value="74769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -310,13 +348,13 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49788135" visible="true" weight="0.23394994" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49788135" visible="true" weight="0.23394994" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1734375" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1734375" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32861805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -396,56 +434,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DB/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaCompraIngrediente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="33" column="135" selection-start-line="33" selection-start-column="135" selection-end-line="33" selection-end-column="135" />
-          <folding>
-            <element signature="method#SelectComprasIngredientes#0;class#GerenciaCompraIngrediente#0" />
-            <element signature="method#InsertCompraIngrediente#0;class#GerenciaCompraIngrediente#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaVendaProdutoFinal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/JanelaAlerta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="44" column="67" lean-forward="true" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
-          <folding>
-            <element signature="method#Display#0;class#JanelaAlerta#0" />
-            <element signature="method#Display#1;class#JanelaAlerta#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/ClienteProdutoVenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/FornecIngredCompra.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -457,13 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TabelasBD/VendaProdutoFinal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -574,13 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" column="172" selection-start-line="16" selection-start-column="172" selection-end-line="16" selection-end-column="172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaClienteProdutoVenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="154" selection-start-line="16" selection-start-column="154" selection-end-line="16" selection-end-column="154" />
         </state>
       </provider>
     </entry>
@@ -751,7 +725,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteQtdeConsumida.java">
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatIngrediente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
@@ -801,10 +775,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteReceitaProducao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatIngrediente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/VendaProdClienteProduto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="530">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
           <folding>
             <element signature="method#main#0;class#Main#0" />
             <element signature="method#start#0;class#Main#0" />
@@ -823,35 +821,72 @@
             <element signature="e#5575#5703#0" />
             <element signature="e#5743#5867#0" />
             <element signature="e#5907#6057#0" />
-            <element signature="e#6578#6633#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaIngredienteReceitaProducao.java">
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatCliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="107" lean-forward="true" selection-start-line="50" selection-start-column="107" selection-end-line="50" selection-end-column="107" />
+        <state relative-caret-position="442">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabelasBD/VendaProdutoFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaClienteProdutoVenda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="154" selection-start-line="16" selection-start-column="154" selection-end-line="16" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatClientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/DadosEstatIngredientes.java">
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/NomeProdutoQtdeVendida.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="37" column="94" lean-forward="true" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/ClienteVendaProdutoVendido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatIngredientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="37" column="84" selection-start-line="37" selection-start-column="84" selection-end-line="37" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteReceitaProducao.java">
+    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatCliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="-578">
+          <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

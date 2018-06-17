@@ -1,7 +1,8 @@
 package Main;
 
 import Scenes.Cadastro.*;
-import Scenes.DadosEstatisticos.DadosEstatIngredientes;
+import Scenes.DadosEstatisticos.SceneDadosEstatClientes;
+import Scenes.DadosEstatisticos.SceneDadosEstatIngredientes;
 import Scenes.Pesquisa.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -66,6 +67,7 @@ public class Main extends Application {
         // cria o menu de dados estatísticos
         Menu menuDadosEstatisticos = new Menu("Dados Estatísticos");
         MenuItem itemDadosEstatIngred = new MenuItem("Ingredientes");
+        MenuItem itemDadosEstatCliente = new MenuItem("Clientes");
 
         // adiciona os menus na barra de menu
         menuBar.getMenus().addAll(menuCadastrar, menuPesquisar, menuDadosEstatisticos);
@@ -77,7 +79,7 @@ public class Main extends Application {
         menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita);
 
         // adiciona no menu de dados estatisticos os itens de menu (submenus)
-        menuDadosEstatisticos.getItems().addAll(itemDadosEstatIngred);
+        menuDadosEstatisticos.getItems().addAll(itemDadosEstatIngred, itemDadosEstatCliente);
 
         // abaixo está a ação (o que acontece quando o usuário clica com o mouse) para cada item de menu (submenu)
         // resumindo, cria-se a instância de cena adequada e chama o método que muda a cena atual
@@ -113,12 +115,10 @@ public class Main extends Application {
             cadCliente.ChangeScene();
         });
 
-        /* mudança */
         itemCadNovoProd.setOnAction(event -> {
             CadastraProdutoFinal cadNovoProd = new CadastraProdutoFinal();
             cadNovoProd.ChangeScene();
         });
-        /* fim mudança */
 
         // Ações dos itens de menu do tipo PESQUISA
         itemPesqCompraIngred.setOnAction(event -> {
@@ -163,8 +163,13 @@ public class Main extends Application {
 
         // Ações dos itens de menu do tipo DADOS ESTATISTICOS
         itemDadosEstatIngred.setOnAction(event -> {
-            DadosEstatIngredientes dadosEstatIngredientes = new DadosEstatIngredientes();
-            dadosEstatIngredientes.ChangeScene();
+            SceneDadosEstatIngredientes sceneDadosEstatIngredientes = new SceneDadosEstatIngredientes();
+            sceneDadosEstatIngredientes.ChangeScene();
+        });
+
+        itemDadosEstatCliente.setOnAction(event -> {
+            SceneDadosEstatClientes sceneDadosEstatClientes = new SceneDadosEstatClientes();
+            sceneDadosEstatClientes.ChangeScene();
         });
 
         // adiciona a barra de menu no layout da janela

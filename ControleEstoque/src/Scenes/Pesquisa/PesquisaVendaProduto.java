@@ -2,7 +2,7 @@ package Scenes.Pesquisa;
 
 import Main.Main;
 import ManageDBTablesCombinadas.GerenciaClienteProdutoVenda;
-import TabelasBDCombinadas.ClienteProdutoVenda;
+import TabelasBDCombinadas.VendaProdClienteProduto;
 import javafx.geometry.Pos;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -10,7 +10,7 @@ import javafx.scene.layout.GridPane;
 
 public class PesquisaVendaProduto extends WindowPesquisa {
 
-    private TableView<ClienteProdutoVenda> table;
+    private TableView<VendaProdClienteProduto> table;
 
     public void ChangeScene(){
         // Layout
@@ -20,27 +20,27 @@ public class PesquisaVendaProduto extends WindowPesquisa {
         layout.setAlignment(Pos.CENTER);
 
         // cria e inicializa coluna com o nome do cliente que comprou
-        TableColumn<ClienteProdutoVenda, String> columnNomeCliente = new TableColumn<>("Nome do cliente");
+        TableColumn<VendaProdClienteProduto, String> columnNomeCliente = new TableColumn<>("Nome do cliente");
         columnNomeCliente = CriaTableColumn(columnNomeCliente, "nomeCliente", 150);
 
         // cria e inicializa coluna com o nome do produto vendido
-        TableColumn<ClienteProdutoVenda, String> columnNomeProduto = new TableColumn<>("Nome do produto");
+        TableColumn<VendaProdClienteProduto, String> columnNomeProduto = new TableColumn<>("Nome do produto");
         columnNomeProduto = CriaTableColumn(columnNomeProduto, "nomeProduto", 150);
 
         // cria e inicializa coluna com a data da venda
-        TableColumn<ClienteProdutoVenda, String> columnDataVenda = new TableColumn<>("Data da venda");
+        TableColumn<VendaProdClienteProduto, String> columnDataVenda = new TableColumn<>("Data da venda");
         columnDataVenda = CriaTableColumn(columnDataVenda, "dataVenda", 150);
 
         // cria e inicializa coluna com a hora da venda
-        TableColumn<ClienteProdutoVenda, String> columnHoraVenda = new TableColumn<>("Hora da venda");
+        TableColumn<VendaProdClienteProduto, String> columnHoraVenda = new TableColumn<>("Hora da venda");
         columnHoraVenda = CriaTableColumn(columnHoraVenda, "horaVenda", 150);
 
         // cria e inicializa coluna com a quantidade vendida do produto
-        TableColumn<ClienteProdutoVenda, String> columnQtdeVendida = new TableColumn<>("Quantidade vendida");
+        TableColumn<VendaProdClienteProduto, String> columnQtdeVendida = new TableColumn<>("Quantidade vendida");
         columnQtdeVendida = CriaTableColumn(columnQtdeVendida, "qtdeVendida", 150);
 
         // cria e inicializa coluna com o valor da venda
-        TableColumn<ClienteProdutoVenda, String> columnPrecoTotal = new TableColumn<>("Preço total");
+        TableColumn<VendaProdClienteProduto, String> columnPrecoTotal = new TableColumn<>("Preço total");
         columnPrecoTotal = CriaTableColumn(columnPrecoTotal, "precoTotal", 150);
 
         // inicializa tabela

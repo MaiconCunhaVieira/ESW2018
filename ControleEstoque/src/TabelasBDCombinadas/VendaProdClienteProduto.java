@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 // classe contém dados da tabelas de clientes, de produtos e de vendas
-public class ClienteProdutoVenda {
+public class VendaProdClienteProduto {
 
     private String nomeCliente;
     private String nomeProduto;
@@ -29,7 +29,7 @@ public class ClienteProdutoVenda {
     public int getQtdeVendida() { return qtdeVendida; }
     public float getPrecoTotal() { return precoTotal; }
 
-    public ClienteProdutoVenda(String nomeCliente, String nomeProduto, LocalDate dataVenda, LocalTime horaVenda, int qtdeVendida, float precoTotal) {
+    public VendaProdClienteProduto(String nomeCliente, String nomeProduto, LocalDate dataVenda, LocalTime horaVenda, int qtdeVendida, float precoTotal) {
         this.nomeCliente = nomeCliente;
         this.nomeProduto = nomeProduto;
         this.dataVenda = dataVenda;

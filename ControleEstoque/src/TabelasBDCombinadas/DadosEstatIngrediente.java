@@ -1,6 +1,6 @@
 package TabelasBDCombinadas;
 
-public class IngredienteQtdeConsumida {
+public class DadosEstatIngrediente {
 
     private int codIngred;
     private String nome;
@@ -16,7 +16,7 @@ public class IngredienteQtdeConsumida {
     public String getNome() { return nome; }
     public int getQtdeConsumida() { return qtdeConsumida; }
 
-    public IngredienteQtdeConsumida(int codIngred, String nome, int qtdeConsumida) {
+    public DadosEstatIngrediente(int codIngred, String nome, int qtdeConsumida) {
         this.codIngred = codIngred;
         this.nome = nome;
         this.qtdeConsumida = qtdeConsumida;

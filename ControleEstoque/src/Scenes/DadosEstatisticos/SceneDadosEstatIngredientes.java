@@ -1,14 +1,14 @@
 package Scenes.DadosEstatisticos;
 
 import Main.Main;
-import ManageDBTablesCombinadas.GerenciaIngredienteReceitaProducao;
+import ManageDBTablesCombinadas.GerenciaDadosEstatIngrediente;
 import Scenes.Pesquisa.WindowPesquisa;
 import javafx.geometry.Pos;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.GridPane;
 
-public class DadosEstatIngredientes extends WindowPesquisa {
+public class SceneDadosEstatIngredientes extends WindowPesquisa {
 
     private TableView table;
 
@@ -35,7 +35,7 @@ public class DadosEstatIngredientes extends WindowPesquisa {
         table = new TableView();
 
         // insere tuplas na tabela
-        table.setItems(GerenciaIngredienteReceitaProducao.SelectIngredienteReceitaProducao());
+        table.setItems(GerenciaDadosEstatIngrediente.SelectDadosEstatIngrediente());
 
         // adiciona na tabela as colunas criadas
         table.getColumns().addAll(columnCodIngred, columnNomeIngrediente, columnQtdeConsumida);
