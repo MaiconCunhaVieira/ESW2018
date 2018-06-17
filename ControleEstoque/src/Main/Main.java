@@ -1,6 +1,7 @@
 package Main;
 
 import Scenes.Cadastro.*;
+import Scenes.DadosEstatisticos.DadosEstatIngredientes;
 import Scenes.Pesquisa.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -62,14 +63,21 @@ public class Main extends Application {
         MenuItem itemPesqCliente = new MenuItem("Cliente");
         MenuItem itemPesqReceita = new MenuItem("Receita");
 
+        // cria o menu de dados estatísticos
+        Menu menuDadosEstatisticos = new Menu("Dados Estatísticos");
+        MenuItem itemDadosEstatIngred = new MenuItem("Ingredientes");
+
         // adiciona os menus na barra de menu
-        menuBar.getMenus().addAll(menuCadastrar, menuPesquisar);
+        menuBar.getMenus().addAll(menuCadastrar, menuPesquisar, menuDadosEstatisticos);
 
         // adiciona no menu de cadastro os itens de menu (submenus)
         menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred, itemCadFornec, itemCadCliente, itemCadNovoProd);
 
         // adiciona no menu de pesquisa os itens de menu (submenus)
         menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita);
+
+        // adiciona no menu de dados estatisticos os itens de menu (submenus)
+        menuDadosEstatisticos.getItems().addAll(itemDadosEstatIngred);
 
         // abaixo está a ação (o que acontece quando o usuário clica com o mouse) para cada item de menu (submenu)
         // resumindo, cria-se a instância de cena adequada e chama o método que muda a cena atual
@@ -151,6 +159,12 @@ public class Main extends Application {
         itemPesqReceita.setOnAction(event -> {
             PesquisaReceitaChooseProduto pesqReceita = new PesquisaReceitaChooseProduto();
             pesqReceita.ChangeScene();
+        });
+
+        // Ações dos itens de menu do tipo DADOS ESTATISTICOS
+        itemDadosEstatIngred.setOnAction(event -> {
+            DadosEstatIngredientes dadosEstatIngredientes = new DadosEstatIngredientes();
+            dadosEstatIngredientes.ChangeScene();
         });
 
         // adiciona a barra de menu no layout da janela
