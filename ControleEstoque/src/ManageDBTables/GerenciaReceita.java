@@ -25,4 +25,14 @@ public abstract class GerenciaReceita {
             return null;
         }
     }
+
+    // Insere uma receita no BD
+    public static void InsertReceita(int codProd, int codIngred, int qtdeIngred){
+        try{
+            Database.ExecuteInsertUpdateORDelete("INSERT INTO Receita (codProd, codIngred, qtdeIngred) VALUES (" + codProd + ", " + codIngred + ", " + qtdeIngred + ");");
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
 }

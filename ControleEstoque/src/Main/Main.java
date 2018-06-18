@@ -53,6 +53,7 @@ public class Main extends Application {
         MenuItem itemCadFornec = new MenuItem("Fornecedor");
         MenuItem itemCadCliente = new MenuItem("Cliente");
         MenuItem itemCadNovoProd = new MenuItem("Produto");
+        MenuItem itemCadReceita = new MenuItem("Receita");
 
         // cria o menu de pesquisas e seus itens de menu (submenus)
         Menu menuPesquisar = new Menu("Pesquisar");
@@ -75,7 +76,7 @@ public class Main extends Application {
         menuBar.getMenus().addAll(menuCadastrar, menuPesquisar, menuDadosEstatisticos);
 
         // adiciona no menu de cadastro os itens de menu (submenus)
-        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred, itemCadFornec, itemCadCliente, itemCadNovoProd);
+        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred, itemCadFornec, itemCadCliente, itemCadNovoProd, itemCadReceita);
 
         // adiciona no menu de pesquisa os itens de menu (submenus)
         menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita);
@@ -120,6 +121,11 @@ public class Main extends Application {
         itemCadNovoProd.setOnAction(event -> {
             CadastraProdutoFinal cadNovoProd = new CadastraProdutoFinal();
             cadNovoProd.ChangeScene();
+        });
+
+        itemCadReceita.setOnAction(event -> {
+            CadastraReceita cadastraReceita = new CadastraReceita();
+            cadastraReceita.ChangeScene();
         });
 
         // Ações dos itens de menu do tipo PESQUISA
