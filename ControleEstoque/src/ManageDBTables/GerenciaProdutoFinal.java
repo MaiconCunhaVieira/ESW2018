@@ -66,7 +66,6 @@ public abstract class GerenciaProdutoFinal {
         try {
             int inserted = Database.ExecuteInsertUpdateORDelete(insertProdutoFinal + "('" + nome + "', " + preco + ", " + peso + ");");
 
-            JanelaAlerta.Display("", "Cadastro de Produto bem sucedido");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

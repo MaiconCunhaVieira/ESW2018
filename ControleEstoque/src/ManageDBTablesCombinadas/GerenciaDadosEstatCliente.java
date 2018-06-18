@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GerenciaDadosEstatCliente {
+public abstract class GerenciaDadosEstatCliente {
 
     private static String pesquisaDadosEstatCliente =
             "SELECT Cliente.nome, ProdutoFinal.nome, VendaProd.qtdeProd " +
@@ -60,7 +60,7 @@ public class GerenciaDadosEstatCliente {
             }
             // FIM DA LÓGICA PARA CALCULAR TOTAL DE VENDAS DE CADA CLIENTE
 
-            
+
             // INÍCIO DA LÓGICA PARA CALCULAR PRODUTO MAIS VENDIDO PARA CADA CLIENTE
 
             // nome de todos os produtos
