@@ -73,6 +73,20 @@ public abstract class GerenciaIngredientes {
         }
     }
 
+    public static List<String> SelectIngredientesFromReceita(int codProd){
+        try {
+            List<String> ingredientesReceita = new ArrayList<>();
+            ResultSet rs = Database.ExecuteSelect("SELECT Ingrediente.nome FROM Ingrediente, Receita WHERE Receita.codProd = " + codProd + " AND Ingrediente.cod = Receita.codIngred;");
+            while (rs.next()){
+                ingredientesReceita.add(rs.getString(1));
+            }
+            return ingredientesReceita;
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
     // Faz uma atualização da quantidade atual de um ingrediente, aumentando a quantidade
     public static void UpdateIngredienteAumentarQtdeAtual(int cod, int qtdeComprada){
         try{

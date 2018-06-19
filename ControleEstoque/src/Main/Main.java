@@ -4,6 +4,7 @@ import Scenes.Cadastro.*;
 import Scenes.DadosEstatisticos.SceneDadosEstatClientes;
 import Scenes.DadosEstatisticos.SceneDadosEstatIngredientes;
 import Scenes.DadosEstatisticos.SceneDadosEstatProdutos;
+import Scenes.Modificar.ModificarReceitaChooseProduto;
 import Scenes.Pesquisa.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -35,7 +36,7 @@ public class Main extends Application {
 
         InitializeMenuBar();
 
-        scene = new Scene(layout, 300, 250);
+        scene = new Scene(layout, 350, 250);
         window.setScene(scene);
         window.show();
     }
@@ -66,14 +67,18 @@ public class Main extends Application {
         MenuItem itemPesqCliente = new MenuItem("Cliente");
         MenuItem itemPesqReceita = new MenuItem("Receita");
 
-        // cria o menu de dados estatísticos
+        // cria o menu de dados estatísticos e seus itens de menu (submenus)
         Menu menuDadosEstatisticos = new Menu("Dados Estatísticos");
         MenuItem itemDadosEstatIngred = new MenuItem("Ingredientes");
         MenuItem itemDadosEstatCliente = new MenuItem("Clientes");
         MenuItem itemDadosEstatProduto = new MenuItem("Produtos");
 
+        // cria o menu de modificação e seus itens de menu (submenus)
+        Menu menuModificar = new Menu("Modificar");
+        MenuItem itemModificarReceita = new MenuItem("Receita");
+
         // adiciona os menus na barra de menu
-        menuBar.getMenus().addAll(menuCadastrar, menuPesquisar, menuDadosEstatisticos);
+        menuBar.getMenus().addAll(menuCadastrar, menuPesquisar, menuDadosEstatisticos, menuModificar);
 
         // adiciona no menu de cadastro os itens de menu (submenus)
         menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred, itemCadFornec, itemCadCliente, itemCadNovoProd, itemCadReceita);
@@ -83,6 +88,9 @@ public class Main extends Application {
 
         // adiciona no menu de dados estatisticos os itens de menu (submenus)
         menuDadosEstatisticos.getItems().addAll(itemDadosEstatIngred, itemDadosEstatCliente, itemDadosEstatProduto);
+
+        // adiciona no menu de modificar os itens de menu (submenus)
+        menuModificar.getItems().addAll(itemModificarReceita);
 
         // abaixo está a ação (o que acontece quando o usuário clica com o mouse) para cada item de menu (submenu)
         // resumindo, cria-se a instância de cena adequada e chama o método que muda a cena atual
@@ -183,6 +191,13 @@ public class Main extends Application {
         itemDadosEstatProduto.setOnAction(event -> {
             SceneDadosEstatProdutos sceneDadosEstatProdutos = new SceneDadosEstatProdutos();
             sceneDadosEstatProdutos.ChangeScene();
+        });
+
+
+        // Ações dos itens de menu do tipo MODIFICAR
+        itemModificarReceita.setOnAction(event -> {
+            ModificarReceitaChooseProduto modificarReceitaChooseProduto = new ModificarReceitaChooseProduto();
+            modificarReceitaChooseProduto.ChangeScene();
         });
 
         // adiciona a barra de menu no layout da janela

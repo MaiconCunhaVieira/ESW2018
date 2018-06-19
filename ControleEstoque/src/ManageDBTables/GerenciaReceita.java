@@ -35,4 +35,13 @@ public abstract class GerenciaReceita {
             System.out.println(e.getMessage());
         }
     }
+
+    public static void UpdateReceita(int codProd, int codIngred, int novaQtde){
+        try {
+            Database.ExecuteInsertUpdateORDelete("UPDATE Receita SET qtdeIngred = " + novaQtde + " WHERE codProd = " + codProd + " AND codIngred = " + codIngred + ";");
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
 }
