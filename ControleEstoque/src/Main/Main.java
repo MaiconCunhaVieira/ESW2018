@@ -2,6 +2,7 @@ package Main;
 
 import Scenes.Cadastro.*;
 import Scenes.DadosEstatisticos.SceneDadosEstatClientes;
+import Scenes.DadosEstatisticos.SceneDadosEstatGastos;
 import Scenes.DadosEstatisticos.SceneDadosEstatIngredientes;
 import Scenes.DadosEstatisticos.SceneDadosEstatProdutos;
 import Scenes.Modificar.ModificarReceitaChooseProduto;
@@ -74,6 +75,7 @@ public class Main extends Application {
         MenuItem itemDadosEstatIngred = new MenuItem("Ingredientes");
         MenuItem itemDadosEstatCliente = new MenuItem("Clientes");
         MenuItem itemDadosEstatProduto = new MenuItem("Produtos");
+        MenuItem itemDadosEstatGastos = new MenuItem("Gastos");
 
         // cria o menu de modificação e seus itens de menu (submenus)
         Menu menuModificar = new Menu("Modificar");
@@ -89,7 +91,7 @@ public class Main extends Application {
         menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita, itemPesqGastos);
 
         // adiciona no menu de dados estatisticos os itens de menu (submenus)
-        menuDadosEstatisticos.getItems().addAll(itemDadosEstatIngred, itemDadosEstatCliente, itemDadosEstatProduto);
+        menuDadosEstatisticos.getItems().addAll(itemDadosEstatIngred, itemDadosEstatCliente, itemDadosEstatProduto,itemDadosEstatGastos);
 
         // adiciona no menu de modificar os itens de menu (submenus)
         menuModificar.getItems().addAll(itemModificarReceita);
@@ -205,6 +207,10 @@ public class Main extends Application {
             sceneDadosEstatProdutos.ChangeScene();
         });
 
+        itemDadosEstatGastos.setOnAction(event -> {
+            SceneDadosEstatGastos sceneDadosEstatGastos = new SceneDadosEstatGastos();
+            sceneDadosEstatGastos.ChangeScene();
+        });
 
         // Ações dos itens de menu do tipo MODIFICAR
         itemModificarReceita.setOnAction(event -> {

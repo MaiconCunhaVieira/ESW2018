@@ -11,50 +11,98 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="543">
-                  <caret line="188" column="41" selection-start-line="188" selection-start-column="41" selection-end-line="188" selection-end-column="41" />
-                  <folding>
-                    <element signature="method#main#0;class#Main#0" />
-                    <element signature="method#start#0;class#Main#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CadastraGastos.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Scenes/Cadastro/CadastraGastos.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="PesquisaProducao.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaProducao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="64" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+              <folding>
+                <element signature="method#main#0;class#Main#0" />
+                <element signature="method#InitializeMenuBar#0;class#Main#0" />
+                <element signature="e#4563#4715#0" />
+                <element signature="e#4755#4881#0" />
+                <element signature="e#4922#5058#0" />
+                <element signature="e#5096#5224#0" />
+                <element signature="e#5262#5388#0" />
+                <element signature="e#5427#5549#0" />
+                <element signature="e#5589#5723#0" />
+                <element signature="e#5762#5894#0" />
+                <element signature="e#6086#6134#0" />
+                <element signature="e#5991#6145#0" />
+                <element signature="e#6186#6314#0" />
+                <element signature="e#6359#6497#0" />
+                <element signature="e#6541#6681#0" />
+                <element signature="e#6728#6866#0" />
+                <element signature="e#6909#7037#0" />
+                <element signature="e#7077#7201#0" />
+                <element signature="e#7241#7391#0" />
+                <element signature="e#7758#7805#0" />
+                <element signature="e#7498#7678#0" />
+                <element signature="e#7724#7888#0" />
+                <element signature="e#7934#8098#0" />
+                <element signature="e#8770#8846#0" />
+                <element signature="e#8197#8385#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneDadosEstatGastos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatGastos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GerenciaDadosEstatGastos.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatGastos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GerenciaGastos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaGastos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="138" lean-forward="true" selection-start-line="19" selection-start-column="138" selection-end-line="19" selection-end-column="138" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DadosEstatGastos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatGastos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gastos.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TabelasBD/Gastos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,10 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaIngrediente.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaProducao.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaProdutoFinal.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaCompraIngrediente.java" />
         <option value="$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaReceita.java" />
         <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/ProdutoFinalReceita.java" />
         <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaProdutoFinalReceita.java" />
@@ -114,10 +158,14 @@
         <option value="$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaReceitaShowTable.java" />
         <option value="$PROJECT_DIR$/src/Scenes/Window.java" />
         <option value="$PROJECT_DIR$/src/TabelasBD/Gastos.java" />
-        <option value="$PROJECT_DIR$/src/Scenes/Cadastro/CadastraGastos.java" />
         <option value="$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaGastos.java" />
-        <option value="$PROJECT_DIR$/src/ManageDBTables/GerenciaGastos.java" />
+        <option value="$PROJECT_DIR$/src/Scenes/Cadastro/CadastraGastos.java" />
+        <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/ProdutoPreçoVendaQtde.java" />
         <option value="$PROJECT_DIR$/src/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatGastos.java" />
+        <option value="$PROJECT_DIR$/src/ManageDBTables/GerenciaGastos.java" />
+        <option value="$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatGastos.java" />
+        <option value="$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatGastos.java" />
       </list>
     </option>
   </component>
@@ -153,18 +201,6 @@
               <item name="ControleEstoque" type="b2602c69:ProjectViewProjectNode" />
               <item name="ControleEstoque" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleEstoque" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleEstoque" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ControleEstoque" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ControleEstoque" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Scenes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,12 +318,12 @@
       <workItem from="1529096710110" duration="8994000" />
       <workItem from="1529170441691" duration="12065000" />
       <workItem from="1529335118988" duration="11933000" />
-      <workItem from="1529448765119" duration="8261000" />
+      <workItem from="1529448765119" duration="15983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95081000" />
+    <option name="totallyTimeSpent" value="102803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -332,52 +368,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Scenes/Cadastro/CadastraCompraIngrediente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="62" column="29" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="62" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaProdutoFinalProducao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="86" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatIngrediente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/IngredienteReceitaProducao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatIngrediente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -399,13 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatIngredientes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="37" column="84" selection-start-line="37" selection-start-column="84" selection-end-line="37" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -699,10 +690,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaProducao.java">
+    <entry file="file://$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaGastos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-549">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="51">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scenes/Cadastro/CadastraGastos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -711,8 +709,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaProducao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="64" selection-end-column="36" />
+        <state relative-caret-position="425">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/ProdutoPreçoVendaQtde.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatIngrediente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaProducao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatIngredientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TabelasBDCombinadas/DadosEstatGastos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaGastos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="138" lean-forward="true" selection-start-line="19" selection-start-column="138" selection-end-line="19" selection-end-column="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -723,40 +775,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/Pesquisa/PesquisaGastos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ManageDBTables/GerenciaGastos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Scenes/Cadastro/CadastraGastos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="188" column="41" selection-start-line="188" selection-start-column="41" selection-end-line="188" selection-end-column="41" />
+        <state relative-caret-position="493">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
           <folding>
             <element signature="method#main#0;class#Main#0" />
-            <element signature="method#start#0;class#Main#0" />
+            <element signature="method#InitializeMenuBar#0;class#Main#0" />
+            <element signature="e#4563#4715#0" />
+            <element signature="e#4755#4881#0" />
+            <element signature="e#4922#5058#0" />
+            <element signature="e#5096#5224#0" />
+            <element signature="e#5262#5388#0" />
+            <element signature="e#5427#5549#0" />
+            <element signature="e#5589#5723#0" />
+            <element signature="e#5762#5894#0" />
+            <element signature="e#6086#6134#0" />
+            <element signature="e#5991#6145#0" />
+            <element signature="e#6186#6314#0" />
+            <element signature="e#6359#6497#0" />
+            <element signature="e#6541#6681#0" />
+            <element signature="e#6728#6866#0" />
+            <element signature="e#6909#7037#0" />
+            <element signature="e#7077#7201#0" />
+            <element signature="e#7241#7391#0" />
+            <element signature="e#7758#7805#0" />
+            <element signature="e#7498#7678#0" />
+            <element signature="e#7724#7888#0" />
+            <element signature="e#7934#8098#0" />
+            <element signature="e#8770#8846#0" />
+            <element signature="e#8197#8385#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Scenes/DadosEstatisticos/SceneDadosEstatGastos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ManageDBTablesCombinadas/GerenciaDadosEstatGastos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
