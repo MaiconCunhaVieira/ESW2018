@@ -55,6 +55,7 @@ public class Main extends Application {
         MenuItem itemCadCliente = new MenuItem("Cliente");
         MenuItem itemCadNovoProd = new MenuItem("Produto");
         MenuItem itemCadReceita = new MenuItem("Receita");
+        MenuItem itemCadGastos = new MenuItem("Gastos");
 
         // cria o menu de pesquisas e seus itens de menu (submenus)
         Menu menuPesquisar = new Menu("Pesquisar");
@@ -66,6 +67,7 @@ public class Main extends Application {
         MenuItem itemPesqFornecedor = new MenuItem("Fornecedor");
         MenuItem itemPesqCliente = new MenuItem("Cliente");
         MenuItem itemPesqReceita = new MenuItem("Receita");
+        MenuItem itemPesqGastos = new MenuItem("Gastos");
 
         // cria o menu de dados estatísticos e seus itens de menu (submenus)
         Menu menuDadosEstatisticos = new Menu("Dados Estatísticos");
@@ -81,10 +83,10 @@ public class Main extends Application {
         menuBar.getMenus().addAll(menuCadastrar, menuPesquisar, menuDadosEstatisticos, menuModificar);
 
         // adiciona no menu de cadastro os itens de menu (submenus)
-        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred, itemCadFornec, itemCadCliente, itemCadNovoProd, itemCadReceita);
+        menuCadastrar.getItems().addAll(itemCadCompraIngred, itemCadProducao, itemCadVendaProd, itemCadIngred, itemCadFornec, itemCadCliente, itemCadNovoProd, itemCadReceita, itemCadGastos);
 
         // adiciona no menu de pesquisa os itens de menu (submenus)
-        menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita);
+        menuPesquisar.getItems().addAll(itemPesqCompraIngred, itemPesqProducao, itemPesqProdutoFinal, itemPesqIngrediente, itemPesqVendaProdFinal, itemPesqFornecedor, itemPesqCliente, itemPesqReceita, itemPesqGastos);
 
         // adiciona no menu de dados estatisticos os itens de menu (submenus)
         menuDadosEstatisticos.getItems().addAll(itemDadosEstatIngred, itemDadosEstatCliente, itemDadosEstatProduto);
@@ -136,6 +138,11 @@ public class Main extends Application {
             cadastraReceita.ChangeScene();
         });
 
+        itemCadGastos.setOnAction(event -> {
+            CadastraGastos cadastraGastos = new CadastraGastos();
+            cadastraGastos.ChangeScene();
+        });
+
         // Ações dos itens de menu do tipo PESQUISA
         itemPesqCompraIngred.setOnAction(event -> {
             PesquisaCompraIngrediente pesqCompraIngred = new PesquisaCompraIngrediente();
@@ -175,6 +182,11 @@ public class Main extends Application {
         itemPesqReceita.setOnAction(event -> {
             PesquisaReceitaChooseProduto pesqReceita = new PesquisaReceitaChooseProduto();
             pesqReceita.ChangeScene();
+        });
+
+        itemPesqGastos.setOnAction(event -> {
+            PesquisaGastos pesquisaGastos = new PesquisaGastos();
+            pesquisaGastos.ChangeScene();
         });
 
         // Ações dos itens de menu do tipo DADOS ESTATISTICOS
