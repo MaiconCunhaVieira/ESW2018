@@ -10,6 +10,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import jfxtras.scene.control.LocalTimePicker;
 
 import java.time.LocalTime;
 import java.util.List;
@@ -19,7 +20,7 @@ public class CadastraCompraIngrediente extends WindowCadastro {
     private ComboBox<String> comboBoxFornec;
     private ComboBox<String> comboBoxIngred;
     private DatePicker datePickerData;
-    private TextField textFieldHora;
+    private LocalTimePicker timePicker;
     private TextField textFieldQtdeIngred;
     private TextField textFieldPreco;
 
@@ -47,8 +48,10 @@ public class CadastraCompraIngrediente extends WindowCadastro {
         // inicialização da variável de datePicker
         datePickerData = CriaDatePicker(1, 3);
 
+        // inicializa timePicker
+        timePicker = CriaTimePicker(1, 4);
+
         // inicialização das variáveis de campo de texto
-        textFieldHora = CriaTextField("Hora", 1, 4);
         textFieldQtdeIngred = CriaNumericTextField("Quantidade", 1, 5);
         textFieldPreco = CriaNumericTextField("Preço", 1, 6);
 
@@ -84,7 +87,7 @@ public class CadastraCompraIngrediente extends WindowCadastro {
             }
 
             // salva a hora atual do sistema
-            LocalTime hora = LocalTime.now();
+            LocalTime hora = timePicker.getLocalTime();
 
             // insere uma nova compra de ingredientes, passando os dados de entrada da cena
             GerenciaCompraIngrediente.InsertCompraIngrediente(cnpj, codIngred, datePickerData.getValue(), hora, Integer.parseInt(textFieldQtdeIngred.getText()), Float.parseFloat(textFieldPreco.getText()));

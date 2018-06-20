@@ -12,6 +12,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import jfxtras.scene.control.LocalTimePicker;
 
 import java.time.LocalTime;
 import java.util.List;
@@ -21,7 +22,7 @@ public class CadastraVendaProduto extends WindowCadastro {
     private ComboBox<String> comboBoxCliente;
     private ComboBox<String> comboBoxProdFinal;
     private DatePicker datePickerData;
-    private TextField textFieldHora;
+    private LocalTimePicker timePicker;
     private TextField textFieldQtde;
 
     public void ChangeScene(){
@@ -46,8 +47,10 @@ public class CadastraVendaProduto extends WindowCadastro {
         // inicialização da variável de datepicker
         datePickerData = CriaDatePicker(1, 3);
 
+        // inicializa timePicker
+        timePicker = CriaTimePicker(1, 4);
+
         // inicialização das variáveis de campo de texto
-        textFieldHora = CriaTextField("Hora", 1, 4);
         textFieldQtde = CriaNumericTextField("Quantidade", 1, 5);
 
         // inicialização do botão que adiciona nova venda
@@ -81,7 +84,7 @@ public class CadastraVendaProduto extends WindowCadastro {
             }
 
             // insere nova venda de produto, passando os dados de entrada da cena
-            GerenciaVendaProdutoFinal.InsertVendaProdutoFinal(cnpjCliente, codPF, datePickerData.getValue(), LocalTime.now(), Integer.parseInt(textFieldQtde.getText()));
+            GerenciaVendaProdutoFinal.InsertVendaProdutoFinal(cnpjCliente, codPF, datePickerData.getValue(), timePicker.getLocalTime(), Integer.parseInt(textFieldQtde.getText()));
         });
 
         // inicialização do botçao que volta para a tela principal

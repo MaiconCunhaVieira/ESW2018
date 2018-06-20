@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/ControleEstoque_jar</output-path>
     <root id="archive" name="ControleEstoque.jar">
       <element id="module-output" name="ControleEstoque" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jfxtras-labs-samples-8.0-r6-SNAPSHOT-all.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/postgresql-42.2.2.jar" path-in-jar="/" />
     </root>
   </artifact>

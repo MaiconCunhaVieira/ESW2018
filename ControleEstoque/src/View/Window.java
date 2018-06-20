@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.TextAlignment;
+import jfxtras.scene.control.LocalTimePicker;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -82,5 +83,12 @@ public abstract class Window {
         tableColumn.setMinWidth(minWidth);
         tableColumn.setCellValueFactory(new PropertyValueFactory<>(classAttributeName));
         return tableColumn;
+    }
+
+    // cria um localtimepicker e o retorna
+    protected static LocalTimePicker CriaTimePicker(int columnIndex, int rowIndex){
+        LocalTimePicker timePicker = new LocalTimePicker();
+        layout.add(timePicker, columnIndex, rowIndex);
+        return timePicker;
     }
 }

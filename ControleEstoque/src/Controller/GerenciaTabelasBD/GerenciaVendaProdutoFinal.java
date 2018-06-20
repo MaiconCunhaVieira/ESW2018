@@ -58,7 +58,7 @@ public abstract class GerenciaVendaProdutoFinal {
             // se tem quantidade suficiente do produto em estoque para vender
             if(!qtdeEmEstoqueInsuficiente){
                 // insere venda no BD
-                Database.ExecuteInsertUpdateORDelete(insertVendaProdFinal + "('" + CNPJCliente + "', " + codProd + ", '" + data + "', '" + LocalTime.now() + "', " + qtdeVendida + ");");
+                Database.ExecuteInsertUpdateORDelete(insertVendaProdFinal + "('" + CNPJCliente + "', " + codProd + ", '" + data + "', '" + hora + "', " + qtdeVendida + ");");
 
                 // atualiza quantidade atual do produto
                 GerenciaProdutoFinal.UpdateProdutoFinalDiminuirQtdePronta(codProd, qtdeVendida);
